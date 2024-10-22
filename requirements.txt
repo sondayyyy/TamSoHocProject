@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 PySide6==6.4.2
 PyQt6==6.4.2
 Pyqt6-tools
-=======
-PySide6==6.4.2
-PyQt6==6.4.2
-Pyqt6-tools
->>>>>>> c143e5b4f8c81ed73923ea95ade34ad0ac576917
+
