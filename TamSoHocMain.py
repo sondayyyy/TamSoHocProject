@@ -2,22 +2,20 @@ import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QDialog
 import threading
 from threading import Thread
-from components import CustomLineEdit
-from ui import Ui_MainWindow, Ui_setting_popup
-from components import SettingPopup, CustomLineEdit
+from ui import MainWindow
+from components import SettingPopup
 
 
 
 class TamSoHocApp(QMainWindow):
     def __init__(self):
         super(TamSoHocApp, self).__init__()
-        self.ui = Ui_MainWindow()  # Khởi tạo giao diện
+        self.ui = MainWindow()  # Khởi tạo giao diện
         self.ui.setupUi(self)  # Thiết lập giao diện
         self.ui_setting_popup = SettingPopup(self)
         self.ui_setting_popup.hide()
         self.ui_setting_popup_show_hide = False
 
-        # self.edit_line = CustomLineEdit()
 
         self.ui.btn_main_header_menu.clicked.connect(self.hide_frm_left_indi)
         self.ui.btn_main_indi_menu.clicked.connect(self.show_main_menu)
@@ -26,20 +24,7 @@ class TamSoHocApp(QMainWindow):
         self.ui.btn_main_header_user.clicked.connect(self.show_main_account)
         self.ui.btn_main_indi_setting.clicked.connect(self.show_setting_popup)
 
-        self.ui.le_main_search_name.setMaxLength(5)
-        # self.le_name.setup_name_edit()
 
-        # self.le_day = self.ui.le_main_search_day()
-        # self.le_day.setup_day_edit()
-
-        # self.le_month = self.ui.le_main_search_month()
-        # self.le_month.setup_month_edit()
-
-        # self.le_year = self.ui.le_main_search_year()
-        # self.le_year.setup_year_edit()
-
-        # self.le_time = self.ui.le_main_search_time()
-        # self.le_time.setup_time_edit()    
 
     def show_main_menu(self):
         self.ui.frm_main.setCurrentWidget(self.ui.frm_main_menu)
@@ -60,30 +45,6 @@ class TamSoHocApp(QMainWindow):
         else:
             self.ui_setting_popup.hide()
             self.ui_setting_popup_show_hide = False
-
-
-    # def set_up_custom_qline_edit(self):
-    #     # self.ui.le_main_search_name = self.edit_line.qline_edit_name
-    #     # self.ui.le_main_search_day = self.edit_line.qline_edit_day
-    #     # self.ui.le_main_search_month = self.edit_line.qline_edit_month
-    #     # self.ui.le_main_search_year = self.edit_line.qline_edit_year
-    #     # self.ui.le_main_search_time = self.edit_line.qline_edit_time
-    
-    #     # Khởi tạo CustomLineEdit cho mỗi QLineEdit và áp dụng kiểm tra hợp lệ
-    #     self.edit_line_name = CustomLineEdit(self.ui.le_main_search_name)
-    #     self.edit_line_name.qline_edit_name()
-
-    #     self.edit_line_day = CustomLineEdit(self.ui.le_main_search_day)
-    #     self.edit_line_day.qline_edit_day()
-
-    #     self.edit_line_month = CustomLineEdit(self.ui.le_main_search_month)
-    #     self.edit_line_month.qline_edit_month()
-
-    #     self.edit_line_year = CustomLineEdit(self.ui.le_main_search_year)
-    #     self.edit_line_year.qline_edit_year()
-
-    #     self.edit_line_time = CustomLineEdit(self.ui.le_main_search_time)
-    #     self.edit_line_time.qline_edit_hour()
 
 
     def hide_frm_left_indi(self):

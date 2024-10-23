@@ -19,6 +19,7 @@ class SettingPopup(QDialog):
         # self.setLayout(layout)
 
 
+
         self.setting_popup_ui.btn_setting_popup_end.clicked.connect(self.end_setting_popup)
         self.setting_popup_ui.btn_setting_popup_fullscrean.clicked.connect(self.fullcrean_setting_popup)
         self.setting_popup_ui.btn_setting_popup_restart.clicked.connect(self.restart_setting_popup)

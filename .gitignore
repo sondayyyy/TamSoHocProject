@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /venv
 venv/
 *.pyc
@@ -25,31 +25,4 @@ dist/
 obfdist/
 testfolder/
 *.spec
-=======
-/venv
-venv/
-*.pyc
-*/__pycached__
-*_venv
-onl.py
-__pycache__
-*.dat
-*.env_parent
-error.log
-*.env
-*.env*
-*.log
-contents*
-*.vscode
-*.sqlite3-journal
-*.conf
-.idea/
-*/venn/
-*/dist/
-*/build/
-build/
-dist/
-obfdist/
-testfolder/
-*.spec
->>>>>>> c143e5b4f8c81ed73923ea95ade34ad0ac576917
+
