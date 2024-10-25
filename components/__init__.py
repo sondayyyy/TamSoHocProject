@@ -1,2 +1,2 @@
-from . edit_line import CustomLineEdit
+from .login_popup import LoginPopupWindow
 from . setting_popup_click import SettingPopup

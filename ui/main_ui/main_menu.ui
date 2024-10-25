@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1002</width>
-    <height>834</height>
+    <width>785</width>
+    <height>671</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -57,9 +57,9 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
        <property name="spacing">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="leftMargin">
         <number>0</number>
@@ -74,232 +74,38 @@
         <number>0</number>
        </property>
        <item>
-        <widget class="QWidget" name="frm_left_indi" native="true">
+        <widget class="QWidget" name="frm_title" native="true">
          <property name="minimumSize">
           <size>
-           <width>170</width>
-           <height>0</height>
+           <width>0</width>
+           <height>40</height>
           </size>
          </property>
-         <property name="styleSheet">
-          <string notr="true"/>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_7">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
           <property name="spacing">
-           <number>20</number>
-          </property>
-          <property name="rightMargin">
            <number>0</number>
           </property>
-          <item>
-           <widget class="QWidget" name="left_indi_user" native="true">
-            <layout class="QHBoxLayout" name="horizontalLayout_7">
-             <property name="spacing">
-              <number>10</number>
-             </property>
-             <property name="leftMargin">
-              <number>3</number>
-             </property>
-             <property name="topMargin">
-              <number>10</number>
-             </property>
-             <property name="rightMargin">
-              <number>3</number>
-             </property>
-             <property name="bottomMargin">
-              <number>3</number>
-             </property>
-             <item>
-              <widget class="QPushButton" name="left_indi_user_image">
-               <property name="minimumSize">
-                <size>
-                 <width>30</width>
-                 <height>30</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>30</width>
-                 <height>30</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QWidget {
-    border: 2px solid purple; /* Độ dày viền là 2px, màu đen */
-    border-radius: 15px;      /* Góc viền bo tròn (tùy chọn) */
-}
-
-</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QWidget" name="frm_left_indi_user" native="true">
-               <layout class="QVBoxLayout" name="verticalLayout_3">
-                <property name="leftMargin">
-                 <number>5</number>
-                </property>
-                <property name="topMargin">
-                 <number>10</number>
-                </property>
-                <property name="rightMargin">
-                 <number>5</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>10</number>
-                </property>
-                <item alignment="Qt::AlignLeft">
-                 <widget class="QPushButton" name="btn_left_indi_user">
-                  <property name="text">
-                   <string>Tên:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="left_indi_user_id">
-                  <property name="text">
-                   <string>Tài khoản:</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item alignment="Qt::AlignLeft">
-           <widget class="QPushButton" name="btn_main_indi_menu">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Trang chủ</string>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>:/Purple/icon_svg/home.svg</normaloff>
-              <normalon>:/White/icon_svg/white/home.svg</normalon>:/Purple/icon_svg/home.svg</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>35</width>
-              <height>35</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item alignment="Qt::AlignLeft">
-           <widget class="QPushButton" name="btn_main_indi_intro">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>Giới thiệu</string>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>:/Purple/icon_svg/book.svg</normaloff>
-              <normalon>:/White/icon_svg/white/book (1).svg</normalon>:/Purple/icon_svg/book.svg</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>35</width>
-              <height>35</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item alignment="Qt::AlignLeft">
-           <widget class="QPushButton" name="btn_main_indi_libary">
-            <property name="text">
-             <string>Thư viện</string>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>:/Purple/icon_svg/bookbok (1).svg</normaloff>
-              <normalon>:/White/icon_svg/white/book.svg</normalon>:/Purple/icon_svg/bookbok (1).svg</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>35</width>
-              <height>35</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item alignment="Qt::AlignLeft">
-           <widget class="QPushButton" name="btn_main_indi_setting">
-            <property name="text">
-             <string>Cài đặt</string>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>:/Purple/icon_svg/setting.svg</normaloff>
-              <normalon>:/White/icon_svg/white/adjust.svg</normalon>:/Purple/icon_svg/setting.svg</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>35</width>
-              <height>35</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item alignment="Qt::AlignHCenter">
-           <widget class="QPushButton" name="btn_left_indi_sign_out">
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>100</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Sign out</string>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>:/Purple/icon_svg/logout.svg</normaloff>:/Purple/icon_svg/logout.svg</iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>30</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="checkable">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QWidget" name="frm_ma" native="true">
-         <layout class="QVBoxLayout" name="verticalLayout_24">
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -313,21 +119,31 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="frm_ma_top">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_5">
             <property name="minimumSize">
              <size>
-              <width>0</width>
-              <height>60</height>
+              <width>150</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>16777215</width>
-              <height>60</height>
+              <width>150</width>
+              <height>40</height>
              </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background: #888</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -335,31 +151,348 @@
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <property name="lineWidth">
-             <number>1</number>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
              <property name="spacing">
-              <number>20</number>
+              <number>0</number>
              </property>
              <property name="leftMargin">
-              <number>10</number>
+              <number>0</number>
              </property>
              <property name="topMargin">
-              <number>9</number>
+              <number>0</number>
              </property>
              <property name="rightMargin">
-              <number>10</number>
+              <number>0</number>
              </property>
              <property name="bottomMargin">
               <number>0</number>
              </property>
+             <item>
+              <widget class="QPushButton" name="btn_minimize_obj">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_resize_obj">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_end_obj">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frm_main_" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="frm_left_indi" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>170</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="left_indi_user" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <property name="spacing">
+                 <number>10</number>
+                </property>
+                <property name="leftMargin">
+                 <number>3</number>
+                </property>
+                <property name="topMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>3</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>3</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="left_indi_user_image">
+                  <property name="minimumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>30</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QWidget {
+    border: 2px solid purple; /* Độ dày viền là 2px, màu đen */
+    border-radius: 15px;      /* Góc viền bo tròn (tùy chọn) */
+}
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="frm_left_indi_user" native="true">
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <property name="leftMargin">
+                    <number>5</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>5</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>10</number>
+                   </property>
+                   <item alignment="Qt::AlignLeft">
+                    <widget class="QPushButton" name="btn_left_indi_user">
+                     <property name="text">
+                      <string>Tên:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="left_indi_user_id">
+                     <property name="text">
+                      <string>Tài khoản:</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
              <item alignment="Qt::AlignLeft">
-              <widget class="QWidget" name="frm_main_header_menu" native="true">
+              <widget class="QPushButton" name="btn_main_indi_menu">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Trang chủ</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/Purple/icon_svg/home.svg</normaloff>
+                 <normalon>:/White/icon_svg/white/home.svg</normalon>:/Purple/icon_svg/home.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="btn_main_indi_intro">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Giới thiệu</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/Purple/icon_svg/book.svg</normaloff>
+                 <normalon>:/White/icon_svg/white/book (1).svg</normalon>:/Purple/icon_svg/book.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="btn_main_indi_libary">
+               <property name="text">
+                <string>Thư viện</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/Purple/icon_svg/bookbok (1).svg</normaloff>
+                 <normalon>:/White/icon_svg/white/book.svg</normalon>:/Purple/icon_svg/bookbok (1).svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="btn_main_indi_setting">
+               <property name="text">
+                <string>Cài đặt</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/Purple/icon_svg/setting.svg</normaloff>
+                 <normalon>:/White/icon_svg/white/adjust.svg</normalon>:/Purple/icon_svg/setting.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>35</width>
+                 <height>35</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QPushButton" name="btn_left_indi_sign_out">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Sign out</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/Purple/icon_svg/logout.svg</normaloff>:/Purple/icon_svg/logout.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="frm_ma" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_24">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frm_ma_top">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
-                 <height>0</height>
+                 <height>60</height>
                 </size>
                </property>
                <property name="maximumSize">
@@ -368,86 +501,36 @@
                  <height>60</height>
                 </size>
                </property>
-               <property name="mouseTracking">
-                <bool>true</bool>
-               </property>
-               <property name="focusPolicy">
-                <enum>Qt::ClickFocus</enum>
-               </property>
-               <property name="autoFillBackground">
-                <bool>false</bool>
-               </property>
                <property name="styleSheet">
-                <string notr="true"/>
+                <string notr="true">background: #888</string>
                </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="lineWidth">
+                <number>1</number>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
                 <property name="spacing">
                  <number>0</number>
                 </property>
                 <property name="leftMargin">
-                 <number>10</number>
+                 <number>0</number>
                 </property>
                 <property name="topMargin">
-                 <number>5</number>
+                 <number>0</number>
                 </property>
                 <property name="rightMargin">
-                 <number>20</number>
+                 <number>0</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>5</number>
+                 <number>0</number>
                 </property>
-                <item>
-                 <widget class="QPushButton" name="btn_main_header_menu">
-                  <property name="minimumSize">
-                   <size>
-                    <width>40</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>40</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                  <property name="mouseTracking">
-                   <bool>true</bool>
-                  </property>
-                  <property name="tabletTracking">
-                   <bool>true</bool>
-                  </property>
-                  <property name="focusPolicy">
-                   <enum>Qt::ClickFocus</enum>
-                  </property>
-                  <property name="contextMenuPolicy">
-                   <enum>Qt::NoContextMenu</enum>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::RightToLeft</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true"/>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>:/Purple/icon_svg/hamburger-menu.svg</normaloff>:/Purple/icon_svg/hamburger-menu.svg</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>40</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="lb_main_header_menu">
+                <item alignment="Qt::AlignLeft">
+                 <widget class="QWidget" name="frm_main_header_menu" native="true">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -457,454 +540,589 @@
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
-                    <height>16777215</height>
+                    <height>60</height>
                    </size>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::ClickFocus</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
                   </property>
                   <property name="styleSheet">
                    <string notr="true"/>
                   </property>
-                  <property name="text">
-                   <string>  Menu</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item alignment="Qt::AlignVCenter">
-              <widget class="QWidget" name="frm_main_header_search_bar" native="true">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>30</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>1000</width>
-                 <height>30</height>
-                </size>
-               </property>
-               <property name="mouseTracking">
-                <bool>true</bool>
-               </property>
-               <property name="focusPolicy">
-                <enum>Qt::ClickFocus</enum>
-               </property>
-               <property name="autoFillBackground">
-                <bool>false</bool>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QWidget {
-    border: 2px solid purple; /* Độ dày viền là 2px, màu đen */
-    border-radius: 10px;      /* Góc viền bo tròn (tùy chọn) */
-}
-
-</string>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_5">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="sizeConstraint">
-                 <enum>QLayout::SetDefaultConstraint</enum>
-                </property>
-                <property name="leftMargin">
-                 <number>10</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>5</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QPushButton" name="btn_main_header_search_bar">
-                  <property name="styleSheet">
-                   <string notr="true">border: none</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>:/Purple/icon_svg/glass.svg</normaloff>:/Purple/icon_svg/glass.svg</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="le_main_header_search_bar">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>1200</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QWidget {
-    border: none;
-}
-</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_2">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QWidget" name="frm_main_header_user" native="true">
-               <property name="maximumSize">
-                <size>
-                 <width>60</width>
-                 <height>60</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true"/>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_3">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="leftMargin">
-                 <number>0</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>10</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item alignment="Qt::AlignRight">
-                 <widget class="QPushButton" name="btn_main_header_user">
-                  <property name="minimumSize">
-                   <size>
-                    <width>40</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                  <property name="sizeIncrement">
-                   <size>
-                    <width>40</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>:/Purple/icon_svg/user.svg</normaloff>:/Purple/icon_svg/user.svg</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>25</width>
-                    <height>25</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QStackedWidget" name="frm_main">
-            <property name="styleSheet">
-             <string notr="true">background: #888</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <property name="currentIndex">
-             <number>0</number>
-            </property>
-            <widget class="QWidget" name="frm_main_menu">
-             <layout class="QVBoxLayout" name="verticalLayout_2">
-              <property name="spacing">
-               <number>3</number>
-              </property>
-              <property name="leftMargin">
-               <number>0</number>
-              </property>
-              <property name="topMargin">
-               <number>0</number>
-              </property>
-              <property name="rightMargin">
-               <number>0</number>
-              </property>
-              <property name="bottomMargin">
-               <number>0</number>
-              </property>
-              <item>
-               <widget class="QFrame" name="frm_main_center">
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>200</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background: #777</string>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_4">
-                 <property name="spacing">
-                  <number>0</number>
-                 </property>
-                 <property name="leftMargin">
-                  <number>70</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>10</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>70</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>0</number>
-                 </property>
-                 <item>
-                  <widget class="QLabel" name="lb_main_content_center_tamsohoc">
-                   <property name="maximumSize">
-                    <size>
-                     <width>1500</width>
-                     <height>30</height>
-                    </size>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <property name="spacing">
+                    <number>0</number>
                    </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>18</pointsize>
-                     <bold>true</bold>
-                    </font>
+                   <property name="leftMargin">
+                    <number>10</number>
                    </property>
-                   <property name="text">
-                    <string>TÂM SỐ HỌC</string>
+                   <property name="topMargin">
+                    <number>5</number>
                    </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
+                   <property name="rightMargin">
+                    <number>20</number>
                    </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <layout class="QGridLayout" name="glo_main_search">
-                   <property name="horizontalSpacing">
-                    <number>30</number>
+                   <property name="bottomMargin">
+                    <number>5</number>
                    </property>
-                   <property name="verticalSpacing">
-                    <number>7</number>
-                   </property>
-                   <item row="5" column="2">
-                    <widget class="QLineEdit" name="le_main_search_year"/>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QLineEdit" name="le_main_search_day"/>
-                   </item>
-                   <item row="4" column="3">
-                    <widget class="QLabel" name="lb_main_search_time">
-                     <property name="text">
-                      <string>* Giờ sinh</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="QLabel" name="lb_main_search_month">
-                     <property name="text">
-                      <string>* Tháng sinh </string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QLabel" name="lb_main_search_day">
-                     <property name="text">
-                      <string>* Ngày sinh</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="3">
-                    <widget class="QLineEdit" name="le_main_search_time"/>
-                   </item>
-                   <item row="7" column="0">
-                    <spacer name="verticalSpacer">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
+                   <item>
+                    <widget class="QPushButton" name="btn_main_header_menu">
+                     <property name="minimumSize">
                       <size>
-                       <width>20</width>
+                       <width>40</width>
                        <height>40</height>
                       </size>
                      </property>
-                    </spacer>
-                   </item>
-                   <item row="4" column="2">
-                    <widget class="QLabel" name="lb_main_search_year">
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="mouseTracking">
+                      <bool>true</bool>
+                     </property>
+                     <property name="tabletTracking">
+                      <bool>true</bool>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::ClickFocus</enum>
+                     </property>
+                     <property name="contextMenuPolicy">
+                      <enum>Qt::NoContextMenu</enum>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::RightToLeft</enum>
+                     </property>
+                     <property name="autoFillBackground">
+                      <bool>false</bool>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
                      <property name="text">
-                      <string>* Năm sinh</string>
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>:/Purple/icon_svg/hamburger-menu.svg</normaloff>:/Purple/icon_svg/hamburger-menu.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
                      </property>
                     </widget>
                    </item>
-                   <item row="5" column="1">
-                    <widget class="QLineEdit" name="le_main_search_month"/>
-                   </item>
-                   <item row="3" column="0" colspan="4">
-                    <widget class="QLineEdit" name="le_main_search_name"/>
-                   </item>
-                   <item row="7" column="1" colspan="2">
-                    <widget class="QPushButton" name="btn_main_search_tracuu">
+                   <item>
+                    <widget class="QLabel" name="lb_main_header_menu">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
                      <property name="maximumSize">
                       <size>
                        <width>16777215</width>
                        <height>16777215</height>
                       </size>
                      </property>
-                     <property name="text">
-                      <string>Tra cứu ngay</string>
+                     <property name="styleSheet">
+                      <string notr="true"/>
                      </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QLabel" name="lb_main_search_name">
                      <property name="text">
-                      <string>* Họ tên:</string>
+                      <string>  Menu</string>
                      </property>
                     </widget>
                    </item>
                   </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item alignment="Qt::AlignVCenter">
+                 <widget class="QWidget" name="frm_main_header_search_bar" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>1000</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::ClickFocus</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QWidget {
+    border: 2px solid purple; /* Độ dày viền là 2px, màu đen */
+    border-radius: 10px;      /* Góc viền bo tròn (tùy chọn) */
+}
+
+</string>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="sizeConstraint">
+                    <enum>QLayout::SetDefaultConstraint</enum>
+                   </property>
+                   <property name="leftMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>5</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="btn_main_header_search_bar">
+                     <property name="styleSheet">
+                      <string notr="true">border: none</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>:/Purple/icon_svg/glass.svg</normaloff>:/Purple/icon_svg/glass.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="le_main_header_search_bar">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>1200</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QWidget {
+    border: none;
+}
+</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QWidget" name="frm_main_header_user" native="true">
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item alignment="Qt::AlignRight">
+                    <widget class="QPushButton" name="btn_main_header_user">
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="sizeIncrement">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>:/Purple/icon_svg/user.svg</normaloff>:/Purple/icon_svg/user.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>25</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QStackedWidget" name="frm_main">
+               <property name="styleSheet">
+                <string notr="true">background: #888</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="frm_main_menu">
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frm_main_center">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background: #777</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>70</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>70</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="lb_main_content_center_tamsohoc">
+                      <property name="maximumSize">
+                       <size>
+                        <width>1500</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>18</pointsize>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>TÂM SỐ HỌC</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QGridLayout" name="glo_main_search">
+                      <property name="horizontalSpacing">
+                       <number>30</number>
+                      </property>
+                      <property name="verticalSpacing">
+                       <number>7</number>
+                      </property>
+                      <item row="4" column="3">
+                       <widget class="QLabel" name="lb_main_search_time">
+                        <property name="text">
+                         <string>* Giờ sinh</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="7" column="0">
+                       <spacer name="verticalSpacer">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QLabel" name="lb_main_search_day">
+                        <property name="text">
+                         <string>* Ngày sinh</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="0">
+                       <widget class="QLineEdit" name="le_main_search_day"/>
+                      </item>
+                      <item row="3" column="0" colspan="4">
+                       <widget class="QLineEdit" name="le_main_search_name"/>
+                      </item>
+                      <item row="5" column="1">
+                       <widget class="QLineEdit" name="le_main_search_month"/>
+                      </item>
+                      <item row="4" column="2">
+                       <widget class="QLabel" name="lb_main_search_year">
+                        <property name="text">
+                         <string>* Năm sinh</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="lb_main_search_name">
+                        <property name="text">
+                         <string>* Họ tên:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="7" column="1" colspan="2">
+                       <widget class="QPushButton" name="btn_main_search_tracuu">
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string>Tra cứu ngay</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="2">
+                       <widget class="QLineEdit" name="le_main_search_year"/>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QLabel" name="lb_main_search_month">
+                        <property name="text">
+                         <string>* Tháng sinh </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="3">
+                       <widget class="QLineEdit" name="le_main_search_time"/>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTabWidget" name="frm_main_bot">
+                   <property name="styleSheet">
+                    <string notr="true">background: #777</string>
+                   </property>
+                   <property name="currentIndex">
+                    <number>3</number>
+                   </property>
+                   <widget class="QWidget" name="frm_main_bot_so_do">
+                    <attribute name="title">
+                     <string>Sơ đồ</string>
+                    </attribute>
+                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frm_main_bot_content_sodo">
+                       <property name="styleSheet">
+                        <string notr="true">background: #666</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="frm_main_bot_nguhanh">
+                    <attribute name="title">
+                     <string>Ngũ hành</string>
+                    </attribute>
+                   </widget>
+                   <widget class="QWidget" name="frm_main_bot_han">
+                    <attribute name="title">
+                     <string>Hạn</string>
+                    </attribute>
+                   </widget>
+                   <widget class="QWidget" name="frm_main_bot_tamhop">
+                    <attribute name="title">
+                     <string>Tam hợp và Cánh cung</string>
+                    </attribute>
+                   </widget>
+                   <widget class="QWidget" name="frm_main_bot_dokiep">
+                    <attribute name="title">
+                     <string>Độ kiếp</string>
+                    </attribute>
+                   </widget>
+                   <widget class="QWidget" name="frm_main_bot_ten">
+                    <attribute name="title">
+                     <string>Tên</string>
+                    </attribute>
+                   </widget>
+                  </widget>
                  </item>
                 </layout>
                </widget>
-              </item>
-              <item>
-               <widget class="QTabWidget" name="frm_main_bot">
-                <property name="styleSheet">
-                 <string notr="true">background: #777</string>
-                </property>
-                <property name="currentIndex">
-                 <number>3</number>
-                </property>
-                <widget class="QWidget" name="frm_main_bot_so_do">
-                 <attribute name="title">
-                  <string>Sơ đồ</string>
-                 </attribute>
-                 <layout class="QVBoxLayout" name="verticalLayout_6">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <item>
-                   <widget class="QFrame" name="frm_main_bot_content_sodo">
-                    <property name="styleSheet">
-                     <string notr="true">background: #666</string>
-                    </property>
-                    <property name="frameShape">
-                     <enum>QFrame::StyledPanel</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-                <widget class="QWidget" name="frm_main_bot_nguhanh">
-                 <attribute name="title">
-                  <string>Ngũ hành</string>
-                 </attribute>
-                </widget>
-                <widget class="QWidget" name="frm_main_bot_han">
-                 <attribute name="title">
-                  <string>Hạn</string>
-                 </attribute>
-                </widget>
-                <widget class="QWidget" name="frm_main_bot_tamhop">
-                 <attribute name="title">
-                  <string>Tam hợp và Cánh cung</string>
-                 </attribute>
-                </widget>
-                <widget class="QWidget" name="frm_main_bot_dokiep">
-                 <attribute name="title">
-                  <string>Độ kiếp</string>
-                 </attribute>
-                </widget>
-                <widget class="QWidget" name="frm_main_bot_ten">
-                 <attribute name="title">
-                  <string>Tên</string>
-                 </attribute>
-                </widget>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-            <widget class="QWidget" name="frm_main_intro">
-             <layout class="QHBoxLayout" name="horizontalLayout_21">
-              <item>
-               <widget class="QFrame" name="frame">
-                <property name="styleSheet">
-                 <string notr="true">background: #999</string>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_18">
+               <widget class="QWidget" name="frm_main_intro">
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
                  <item>
-                  <widget class="QLabel" name="lb_bot_tamsohoc">
+                  <widget class="QFrame" name="frame">
+                   <property name="styleSheet">
+                    <string notr="true">background: #999</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_18">
+                    <item>
+                     <widget class="QLabel" name="lb_bot_tamsohoc">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>18</pointsize>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>GIỚI THIỆU</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_2">
+                      <property name="styleSheet">
+                       <string notr="true">background: #888</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_19"/>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="frm_main_lib">
+                <layout class="QVBoxLayout" name="verticalLayout_23">
+                 <item>
+                  <widget class="QLabel" name="lb_bot_tamsohoc_2">
                    <property name="maximumSize">
                     <size>
                      <width>16777215</width>
@@ -918,7 +1136,7 @@
                     </font>
                    </property>
                    <property name="text">
-                    <string>GIỚI THIỆU</string>
+                    <string>THƯ VIỆN TRA CỨU</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -926,9 +1144,9 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="frame_2">
+                  <widget class="QFrame" name="frame_3">
                    <property name="styleSheet">
-                    <string notr="true">background: #888</string>
+                    <string notr="true">background: #999</string>
                    </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
@@ -936,229 +1154,75 @@
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_19"/>
+                   <layout class="QVBoxLayout" name="verticalLayout_21">
+                    <item>
+                     <widget class="QFrame" name="frame_4">
+                      <property name="styleSheet">
+                       <string notr="true">background: #888</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_22"/>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
                </widget>
-              </item>
-             </layout>
-            </widget>
-            <widget class="QWidget" name="frm_main_lib">
-             <layout class="QVBoxLayout" name="verticalLayout_23">
-              <item>
-               <widget class="QLabel" name="lb_bot_tamsohoc_2">
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>18</pointsize>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>THƯ VIỆN TRA CỨU</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QFrame" name="frame_3">
-                <property name="styleSheet">
-                 <string notr="true">background: #999</string>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_21">
+               <widget class="QWidget" name="frm_main_account">
+                <layout class="QVBoxLayout" name="verticalLayout_30">
                  <item>
-                  <widget class="QFrame" name="frame_4">
-                   <property name="styleSheet">
-                    <string notr="true">background: #888</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_22"/>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-            <widget class="QWidget" name="frm_main_account">
-             <layout class="QVBoxLayout" name="verticalLayout_30">
-              <item>
-               <widget class="QWidget" name="frm_setting_bar" native="true">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background: rgb(136, 136, 136)</string>
-                </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_2">
-                 <item>
-                  <widget class="QLabel" name="lb_setting_bar">
-                   <property name="text">
-                    <string>Thông tin cá nhân và điều khoản ứng dụng</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QWidget" name="frm_main_setting_bar" native="true">
-                <property name="minimumSize">
-                 <size>
-                  <width>494</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background: #999</string>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_25">
-                 <item>
-                  <widget class="QFrame" name="frm_menu_bar">
-                   <property name="maximumSize">
+                  <widget class="QWidget" name="frm_setting_bar" native="true">
+                   <property name="minimumSize">
                     <size>
-                     <width>16777215</width>
-                     <height>160</height>
+                     <width>0</width>
+                     <height>40</height>
                     </size>
                    </property>
-                   <property name="layoutDirection">
-                    <enum>Qt::LeftToRight</enum>
-                   </property>
                    <property name="styleSheet">
-                    <string notr="true">background: #888</string>
+                    <string notr="true">background: rgb(136, 136, 136)</string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QGridLayout" name="gridLayout">
-                    <property name="leftMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="horizontalSpacing">
-                     <number>0</number>
-                    </property>
-                    <property name="verticalSpacing">
-                     <number>5</number>
-                    </property>
-                    <item row="0" column="2">
-                     <spacer name="horizontalSpacer_3">
-                      <property name="orientation">
-                       <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>40</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                    <item row="2" column="1">
-                     <widget class="QLabel" name="lb_menu_bar_id">
+                   <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                     <widget class="QLabel" name="lb_setting_bar">
                       <property name="text">
-                       <string>TextLabel</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
+                       <string>Thông tin cá nhân và điều khoản ứng dụng</string>
                       </property>
                      </widget>
-                    </item>
-                    <item row="1" column="1">
-                     <widget class="QLabel" name="lb_menu_bar_name">
-                      <property name="text">
-                       <string>TextLabel</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="1">
-                     <widget class="QWidget" name="widget_menu_bar_image" native="true">
-                      <property name="minimumSize">
-                       <size>
-                        <width>80</width>
-                        <height>80</height>
-                       </size>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="3" column="1">
-                     <widget class="QLabel" name="lb_menu_bar_time_pre">
-                      <property name="text">
-                       <string>TextLabel</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="0">
-                     <spacer name="horizontalSpacer_4">
-                      <property name="orientation">
-                       <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>40</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                     </spacer>
                     </item>
                    </layout>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QGroupBox" name="box_main_account">
-                   <property name="title">
-                    <string>Tiện ích</string>
+                  <widget class="QWidget" name="frm_main_setting_bar" native="true">
+                   <property name="minimumSize">
+                    <size>
+                     <width>494</width>
+                     <height>0</height>
+                    </size>
                    </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_26">
+                   <property name="styleSheet">
+                    <string notr="true">background: #999</string>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_25">
                     <item>
-                     <widget class="QFrame" name="frm_setting_1">
+                     <widget class="QFrame" name="frm_menu_bar">
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>75</height>
+                        <height>160</height>
                        </size>
                       </property>
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
                       <property name="styleSheet">
-                       <string notr="true">background: #777</string>
+                       <string notr="true">background: #888</string>
                       </property>
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -1166,138 +1230,252 @@
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
-                      <layout class="QVBoxLayout" name="verticalLayout_27">
-                       <item>
-                        <widget class="QPushButton" name="btn_setting_1_taikhoan">
+                      <layout class="QGridLayout" name="gridLayout">
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="horizontalSpacing">
+                        <number>0</number>
+                       </property>
+                       <property name="verticalSpacing">
+                        <number>5</number>
+                       </property>
+                       <item row="0" column="2">
+                        <spacer name="horizontalSpacer_3">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLabel" name="lb_menu_bar_id">
                          <property name="text">
-                          <string>Thông tin tài khoản</string>
+                          <string>TextLabel</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
                          </property>
                         </widget>
                        </item>
-                       <item>
-                        <widget class="QPushButton" name="btn_setting_1_napthem">
+                       <item row="1" column="1">
+                        <widget class="QLabel" name="lb_menu_bar_name">
                          <property name="text">
-                          <string>Nạp thêm</string>
+                          <string>TextLabel</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
                          </property>
                         </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QWidget" name="widget_menu_bar_image" native="true">
+                         <property name="minimumSize">
+                          <size>
+                           <width>80</width>
+                           <height>80</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLabel" name="lb_menu_bar_time_pre">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <spacer name="horizontalSpacer_4">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
                        </item>
                       </layout>
                      </widget>
                     </item>
                     <item>
-                     <widget class="QFrame" name="frm_setting_2">
+                     <widget class="QGroupBox" name="box_main_account">
+                      <property name="title">
+                       <string>Tiện ích</string>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_26">
+                       <item>
+                        <widget class="QFrame" name="frm_setting_1">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>75</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background: #777</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_27">
+                          <item>
+                           <widget class="QPushButton" name="btn_setting_1_taikhoan">
+                            <property name="text">
+                             <string>Thông tin tài khoản</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="btn_setting_1_napthem">
+                            <property name="text">
+                             <string>Nạp thêm</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frm_setting_2">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>75</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background: #777</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_28">
+                          <item>
+                           <widget class="QPushButton" name="btn_setting_2_hotro">
+                            <property name="text">
+                             <string>Trung tâm trợ giúp</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="btn_setting_2_dieukhoan">
+                            <property name="text">
+                             <string>Điều khoản ứng dụng</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frm_setting_3">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>105</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background: #777</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_29">
+                          <item>
+                           <widget class="QPushButton" name="btn_setting_3_website">
+                            <property name="text">
+                             <string>Website</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="btn_setting_3_lienhe">
+                            <property name="text">
+                             <string>Liên hệ hợp tác hoặc góp ý</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="pushButton_12">
+                            <property name="text">
+                             <string>Đánh giá </string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_8">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="lb_info">
                       <property name="maximumSize">
                        <size>
                         <width>16777215</width>
-                        <height>75</height>
+                        <height>90</height>
                        </size>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">background: #777</string>
+                       <string notr="true">background: #888</string>
                       </property>
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
+                      <property name="text">
+                       <string>Phiên bản:...........</string>
                       </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QVBoxLayout" name="verticalLayout_28">
-                       <item>
-                        <widget class="QPushButton" name="btn_setting_2_hotro">
-                         <property name="text">
-                          <string>Trung tâm trợ giúp</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QPushButton" name="btn_setting_2_dieukhoan">
-                         <property name="text">
-                          <string>Điều khoản ứng dụng</string>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
                      </widget>
-                    </item>
-                    <item>
-                     <widget class="QFrame" name="frm_setting_3">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>105</height>
-                       </size>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">background: #777</string>
-                      </property>
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QVBoxLayout" name="verticalLayout_29">
-                       <item>
-                        <widget class="QPushButton" name="btn_setting_3_website">
-                         <property name="text">
-                          <string>Website</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QPushButton" name="btn_setting_3_lienhe">
-                         <property name="text">
-                          <string>Liên hệ hợp tác hoặc góp ý</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QPushButton" name="pushButton_12">
-                         <property name="text">
-                          <string>Đánh giá </string>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <spacer name="verticalSpacer_8">
-                      <property name="orientation">
-                       <enum>Qt::Vertical</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>20</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                     </spacer>
                     </item>
                    </layout>
                   </widget>
                  </item>
-                 <item>
-                  <widget class="QLabel" name="lb_info">
-                   <property name="maximumSize">
-                    <size>
-                     <width>16777215</width>
-                     <height>90</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">background: #888</string>
-                   </property>
-                   <property name="text">
-                    <string>Phiên bản:...........</string>
-                   </property>
-                  </widget>
-                 </item>
                 </layout>
                </widget>
-              </item>
-             </layout>
-            </widget>
+              </widget>
+             </item>
+            </layout>
            </widget>
           </item>
          </layout>
@@ -1309,41 +1487,6 @@
    </layout>
   </widget>
  </widget>
- <resources>
-  <include location="../../resources_rc.qrc"/>
- </resources>
- <connections>
-  <connection>
-   <sender>btn_main_header_menu</sender>
-   <signal>clicked(bool)</signal>
-   <receiver>frm_left_indi</receiver>
-   <slot>setHidden(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>192</x>
-     <y>55</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>131</x>
-     <y>55</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>btn_main_header_menu</sender>
-   <signal>clicked(bool)</signal>
-   <receiver>frm_left_indi</receiver>
-   <slot>showMinimized()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>212</x>
-     <y>40</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>125</x>
-     <y>506</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <resources/>
+ <connections/>
 </ui>
