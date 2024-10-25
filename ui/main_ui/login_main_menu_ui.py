@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'login_main_menuHRTDQl.ui'
+## Form generated from reading UI file 'login_main_menuKKMpyL.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -17,13 +17,13 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QSpacerItem, QStackedWidget, QVBoxLayout, QWidget, QDialog)
+    QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
 
-class Ui_LoginMainWindow(QDialog):
+class Ui_LoginMainWindow(object):
     def setupUi(self, LoginMainWindow):
         if not LoginMainWindow.objectName():
             LoginMainWindow.setObjectName(u"LoginMainWindow")
-        LoginMainWindow.resize(715, 593)
+        LoginMainWindow.resize(384, 390)
         self.centralwidget = QWidget(LoginMainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -332,7 +332,7 @@ class Ui_LoginMainWindow(QDialog):
 
         self.verticalLayout.addWidget(self.bot_frm)
 
-        # LoginMainWindow.setCentralWidget(self.centralwidget)
+        LoginMainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(LoginMainWindow)
 

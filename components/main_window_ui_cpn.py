@@ -7,7 +7,7 @@ if TYPE_CHECKING:
     from ..TamSoHocMain import TamSoHocApp
 
 
-class CustomMainWindow(QObject):
+class MainWindowUiCpn(QObject):
     def __init__(self, main):
         super().__init__()
         self.main : TamSoHocApp = main
@@ -36,10 +36,12 @@ class CustomMainWindow(QObject):
         self.main.ui.le_main_search_month.setMaxLength(2)
 
 
+
         # Tùy chỉnh cho năm (nhập năm có 4 chữ số, ví dụ 1900-2999)
         year_validator = QIntValidator(1900, 2999)
         self.main.ui.le_main_search_year.setValidator(year_validator)
         self.main.ui.le_main_search_year.setMaxLength(4)
+
 
 
         # Tùy chỉnh cho giờ (nhập giờ có 2 chữ số, ví dụ 0-23)
@@ -47,28 +49,48 @@ class CustomMainWindow(QObject):
         self.main.ui.le_main_search_time.setValidator(time_validator)
         self.main.ui.le_main_search_time.setMaxLength(2)  
 
+
         # Tuỳ chỉnh title bar
         self.main.ui.frm_title.mousePressEvent = self.mousePressEvent
         self.main.ui.frm_title.mouseMoveEvent = self.mouseMoveEvent
         self.main.ui.frm_title.mouseReleaseEvent = self.mouseReleaseEvent
 
 
-        
-    def transformer(self):
-        # Tạo hiệu ứng độ mờ
-        self.opacity_effect = QGraphicsOpacityEffect()
-        self.opacity_effect.setOpacity(0)  # Đặt độ mờ thành 0 (hoàn toàn trong suốt)
-        
-        # Áp dụng hiệu ứng cho widget trung tâm
-        self.main.ui.centralwidget.setGraphicsEffect(self.opacity_effect)
-    
-    def show_widget(self):
-    # Tạo hiệu ứng độ mờ
-        self.opacity_effect = QGraphicsOpacityEffect()
-        self.opacity_effect.setOpacity(1)  # Đặt độ mờ thành 1 (hoàn toàn không trong suốt)
+        self.main.ui.btn_main_header_menu.clicked.connect(self.hide_frm_left_indi)
+        self.main.ui.btn_main_indi_menu.clicked.connect(self.show_main_menu)
+        self.main.ui.btn_main_indi_intro.clicked.connect(self.show_main_intro)
+        self.main.ui.btn_main_indi_libary.clicked.connect(self.show_main_lib)
+        self.main.ui.btn_main_header_user.clicked.connect(self.show_main_account)
+        self.main.ui.btn_main_indi_setting.clicked.connect(self.main.show_setting_popup)
 
-        # Áp dụng hiệu ứng cho widget trung tâm
-        self.main.ui.centralwidget.setGraphicsEffect(self.opacity_effect)
+
+        self.main.ui.btn_left_indi_sign_out.clicked.connect(self.main.back_to_login)
+
+        self.main.ui.btn_minimize_obj.clicked.connect(self.main.minimize_ui)
+        self.main.ui.btn_resize_obj.clicked.connect(self.main.resize_ui)
+        self.main.ui.btn_end_obj.clicked.connect(self.main.end_ui)
+
+
+    def show_main_menu(self):
+        self.main.ui.frm_main.setCurrentWidget(self.main.ui.frm_main_menu)
+
+    def show_main_intro(self):
+        self.main.ui.frm_main.setCurrentWidget(self.main.ui.frm_main_intro)
+
+    def show_main_lib(self):
+        self.main.ui.frm_main.setCurrentWidget(self.main.ui.frm_main_lib)
+
+    def show_main_account(self):
+        self.main.ui.frm_main.setCurrentWidget(self.main.ui.frm_main_account)
+
+    def hide_frm_left_indi(self):
+        if self.main.ui.frm_left_indi.isVisible():
+            self.main.ui.frm_left_indi.hide()
+            print(82, "hide_indi")
+        else:
+            self.main.ui.frm_left_indi.show()
+            print(85, "show_indi")
+
 
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
