@@ -1,1 +1,1 @@
-from . main_ui import Ui_MainWindow, Ui_setting_popup, Ui_LoginMainWindow
+from . main_ui import Ui_MainWindow, Ui_setting_popup, Ui_LoginMainWindow, Ui_LogoutAccept

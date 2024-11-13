@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'settingwuAXnR.ui'
+## Form generated from reading UI file 'settingBFosuj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -15,15 +15,21 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QGridLayout,
-    QHBoxLayout, QLabel, QPushButton, QSizePolicy,
-    QSpacerItem, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QPushButton, QSizePolicy, QSpacerItem,
+    QVBoxLayout, QWidget)
+import resource_rc_rc
 
 class Ui_setting_popup(object):
     def setupUi(self, setting_popup):
         if not setting_popup.objectName():
             setting_popup.setObjectName(u"setting_popup")
         setting_popup.resize(300, 408)
+        sizePolicy = QSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(setting_popup.sizePolicy().hasHeightForWidth())
+        setting_popup.setSizePolicy(sizePolicy)
         setting_popup.setMinimumSize(QSize(300, 0))
         setting_popup.setMaximumSize(QSize(300, 16777215))
         setting_popup.setStyleSheet(u"background: rgb(243, 243, 243)")
@@ -48,25 +54,16 @@ class Ui_setting_popup(object):
 
         self.btn_setting_popup_fullscrean = QPushButton(self.frm_setting_popup)
         self.btn_setting_popup_fullscrean.setObjectName(u"btn_setting_popup_fullscrean")
-        icon = QIcon()
-        icon.addFile(u":/Purple/icon_svg/full-screen.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_setting_popup_fullscrean.setIcon(icon)
 
         self.horizontalLayout.addWidget(self.btn_setting_popup_fullscrean)
 
         self.btn_setting_popup_restart = QPushButton(self.frm_setting_popup)
         self.btn_setting_popup_restart.setObjectName(u"btn_setting_popup_restart")
-        icon1 = QIcon()
-        icon1.addFile(u":/Purple/icon_svg/restart.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_setting_popup_restart.setIcon(icon1)
 
         self.horizontalLayout.addWidget(self.btn_setting_popup_restart)
 
         self.btn_setting_popup_end = QPushButton(self.frm_setting_popup)
         self.btn_setting_popup_end.setObjectName(u"btn_setting_popup_end")
-        icon2 = QIcon()
-        icon2.addFile(u":/Purple/icon_svg/close.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_setting_popup_end.setIcon(icon2)
 
         self.horizontalLayout.addWidget(self.btn_setting_popup_end)
 
@@ -76,32 +73,33 @@ class Ui_setting_popup(object):
         self.frm_indi = QWidget(setting_popup)
         self.frm_indi.setObjectName(u"frm_indi")
         self.verticalLayout_2 = QVBoxLayout(self.frm_indi)
+        self.verticalLayout_2.setSpacing(6)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.frm_indi_mode = QFrame(self.frm_indi)
+        self.frm_indi_mode = QWidget(self.frm_indi)
         self.frm_indi_mode.setObjectName(u"frm_indi_mode")
-        self.frm_indi_mode.setFrameShape(QFrame.StyledPanel)
-        self.frm_indi_mode.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.frm_indi_mode)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.horizontalLayout_2.setContentsMargins(0, 10, 0, 10)
-        self.indi_mode_image = QLabel(self.frm_indi_mode)
-        self.indi_mode_image.setObjectName(u"indi_mode_image")
-        self.indi_mode_image.setMaximumSize(QSize(30, 30))
-        self.indi_mode_image.setPixmap(QPixmap(u":/Purple/icon_svg/cloudy.svg"))
-        self.indi_mode_image.setScaledContents(True)
-
-        self.horizontalLayout_2.addWidget(self.indi_mode_image)
-
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.indi_mode_text = QLabel(self.frm_indi_mode)
         self.indi_mode_text.setObjectName(u"indi_mode_text")
 
         self.horizontalLayout_2.addWidget(self.indi_mode_text)
 
-        self.indi_mode_checkbox = QCheckBox(self.frm_indi_mode)
-        self.indi_mode_checkbox.setObjectName(u"indi_mode_checkbox")
-        self.indi_mode_checkbox.setIconSize(QSize(60, 60))
+        self.frm_btn_mode = QFrame(self.frm_indi_mode)
+        self.frm_btn_mode.setObjectName(u"frm_btn_mode")
+        self.horizontalLayout_5 = QHBoxLayout(self.frm_btn_mode)
+        self.horizontalLayout_5.setSpacing(0)
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
 
-        self.horizontalLayout_2.addWidget(self.indi_mode_checkbox)
+        self.horizontalLayout_2.addWidget(self.frm_btn_mode)
+
+        self.frame = QFrame(self.frm_indi_mode)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_2.addWidget(self.frame)
 
 
         self.verticalLayout_2.addWidget(self.frm_indi_mode)
@@ -112,26 +110,27 @@ class Ui_setting_popup(object):
         self.frm_indi_contrast.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.frm_indi_contrast)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.horizontalLayout_3.setContentsMargins(0, 10, 0, 10)
-        self.indi_contrast_image = QLabel(self.frm_indi_contrast)
-        self.indi_contrast_image.setObjectName(u"indi_contrast_image")
-        self.indi_contrast_image.setMinimumSize(QSize(30, 30))
-        self.indi_contrast_image.setMaximumSize(QSize(30, 30))
-        self.indi_contrast_image.setPixmap(QPixmap(u":/Purple/icon_svg/sun.svg"))
-        self.indi_contrast_image.setScaledContents(True)
-
-        self.horizontalLayout_3.addWidget(self.indi_contrast_image)
-
+        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.indi_contrast_text = QLabel(self.frm_indi_contrast)
         self.indi_contrast_text.setObjectName(u"indi_contrast_text")
 
         self.horizontalLayout_3.addWidget(self.indi_contrast_text)
 
-        self.indi_contrast_checkbox = QCheckBox(self.frm_indi_contrast)
-        self.indi_contrast_checkbox.setObjectName(u"indi_contrast_checkbox")
-        self.indi_contrast_checkbox.setIconSize(QSize(60, 60))
+        self.frm_btn_contrast = QFrame(self.frm_indi_contrast)
+        self.frm_btn_contrast.setObjectName(u"frm_btn_contrast")
+        self.horizontalLayout_6 = QHBoxLayout(self.frm_btn_contrast)
+        self.horizontalLayout_6.setSpacing(0)
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
 
-        self.horizontalLayout_3.addWidget(self.indi_contrast_checkbox)
+        self.horizontalLayout_3.addWidget(self.frm_btn_contrast)
+
+        self.frame_2 = QFrame(self.frm_indi_contrast)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_3.addWidget(self.frame_2)
 
 
         self.verticalLayout_2.addWidget(self.frm_indi_contrast)
@@ -150,7 +149,6 @@ class Ui_setting_popup(object):
         self.indi_color_image.setObjectName(u"indi_color_image")
         self.indi_color_image.setMinimumSize(QSize(30, 30))
         self.indi_color_image.setMaximumSize(QSize(30, 30))
-        self.indi_color_image.setPixmap(QPixmap(u":/Purple/icon_svg/color-picker.svg"))
         self.indi_color_image.setScaledContents(True)
 
         self.horizontalLayout_4.addWidget(self.indi_color_image)
@@ -167,36 +165,37 @@ class Ui_setting_popup(object):
         self.gridLayout.setObjectName(u"gridLayout")
         self.indi_color_green = QPushButton(self.frm_indi_color)
         self.indi_color_green.setObjectName(u"indi_color_green")
-        icon3 = QIcon()
-        icon3.addFile(u":/White/icon_svg/white/rows (4).svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.indi_color_green.setIcon(icon3)
+        icon = QIcon()
+        icon.addFile(u":/color/images/color_green.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.indi_color_green.setIcon(icon)
         self.indi_color_green.setIconSize(QSize(20, 20))
+        self.indi_color_green.setFlat(False)
 
         self.gridLayout.addWidget(self.indi_color_green, 1, 0, 1, 1, Qt.AlignHCenter)
 
         self.indi_color_purple = QPushButton(self.frm_indi_color)
         self.indi_color_purple.setObjectName(u"indi_color_purple")
-        icon4 = QIcon()
-        icon4.addFile(u":/White/icon_svg/white/rows (3).svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.indi_color_purple.setIcon(icon4)
+        icon1 = QIcon()
+        icon1.addFile(u"icons/color_purple.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.indi_color_purple.setIcon(icon1)
         self.indi_color_purple.setIconSize(QSize(20, 20))
 
         self.gridLayout.addWidget(self.indi_color_purple, 0, 0, 1, 1, Qt.AlignHCenter)
 
         self.indi_color_blue = QPushButton(self.frm_indi_color)
         self.indi_color_blue.setObjectName(u"indi_color_blue")
-        icon5 = QIcon()
-        icon5.addFile(u":/White/icon_svg/white/rows (2).svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.indi_color_blue.setIcon(icon5)
+        icon2 = QIcon()
+        icon2.addFile(u":/color/images/color_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.indi_color_blue.setIcon(icon2)
         self.indi_color_blue.setIconSize(QSize(20, 20))
 
         self.gridLayout.addWidget(self.indi_color_blue, 0, 1, 1, 1, Qt.AlignHCenter)
 
         self.indi_color_black = QPushButton(self.frm_indi_color)
         self.indi_color_black.setObjectName(u"indi_color_black")
-        icon6 = QIcon()
-        icon6.addFile(u":/White/icon_svg/white/rows (5).svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.indi_color_black.setIcon(icon6)
+        icon3 = QIcon()
+        icon3.addFile(u":/color/images/color_whiteblack.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.indi_color_black.setIcon(icon3)
         self.indi_color_black.setIconSize(QSize(20, 20))
 
         self.gridLayout.addWidget(self.indi_color_black, 1, 1, 1, 1, Qt.AlignHCenter)
@@ -226,12 +225,8 @@ class Ui_setting_popup(object):
         self.btn_setting_popup_fullscrean.setText("")
         self.btn_setting_popup_restart.setText("")
         self.btn_setting_popup_end.setText("")
-        self.indi_mode_image.setText("")
         self.indi_mode_text.setText(QCoreApplication.translate("setting_popup", u"Darkmode", None))
-        self.indi_mode_checkbox.setText("")
-        self.indi_contrast_image.setText("")
         self.indi_contrast_text.setText(QCoreApplication.translate("setting_popup", u"Contrast", None))
-        self.indi_contrast_checkbox.setText("")
         self.indi_color_image.setText("")
         self.indi_color_text.setText(QCoreApplication.translate("setting_popup", u"Color", None))
         self.indi_color_green.setText("")

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>384</width>
-    <height>390</height>
+    <width>374</width>
+    <height>455</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -53,8 +53,14 @@
        </property>
        <item>
         <widget class="QLabel" name="lb_title">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>Title</string>
+          <string>TÂM SỐ HỌC</string>
          </property>
         </widget>
        </item>
@@ -79,13 +85,6 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btn_fullscreen">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="QPushButton" name="btn_end">
          <property name="text">
           <string/>
@@ -96,7 +95,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QStackedWidget" name="frm_main">
       <property name="maximumSize">
        <size>
         <width>16777210</width>
@@ -138,14 +137,17 @@
            </size>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_10">
+           <property name="spacing">
+            <number>7</number>
+           </property>
            <property name="leftMargin">
-            <number>0</number>
+            <number>10</number>
            </property>
            <property name="topMargin">
             <number>0</number>
            </property>
            <property name="rightMargin">
-            <number>0</number>
+            <number>10</number>
            </property>
            <property name="bottomMargin">
             <number>0</number>
@@ -176,8 +178,14 @@
               </property>
               <item>
                <widget class="QLabel" name="lb_login">
+                <property name="font">
+                 <font>
+                  <pointsize>18</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
                 <property name="text">
-                 <string>Login</string>
+                 <string>Đăng nhập</string>
                 </property>
                </widget>
               </item>
@@ -208,7 +216,7 @@
                  </size>
                 </property>
                 <property name="text">
-                 <string>Tài khoản</string>
+                 <string>Tài khoản:</string>
                 </property>
                </widget>
               </item>
@@ -256,7 +264,7 @@
                  </size>
                 </property>
                 <property name="text">
-                 <string>Mật khẩu</string>
+                 <string>Mật khẩu:</string>
                 </property>
                </widget>
               </item>
@@ -293,30 +301,44 @@
             </widget>
            </item>
            <item>
-            <widget class="QWidget" name="widget_5" native="true">
-             <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>100</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
               <property name="leftMargin">
-               <number>30</number>
+               <number>190</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
               </property>
               <property name="rightMargin">
                <number>15</number>
               </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item>
-               <widget class="QPushButton" name="btn_login_enter">
+               <widget class="QPushButton" name="btn_login_forget">
+                <property name="maximumSize">
+                 <size>
+                  <width>150</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
                 <property name="text">
-                 <string>Đăng nhập</string>
+                 <string>Bạn quên mật khẩu?</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="btn_login_reges">
-                <property name="text">
-                 <string>Đăng ký hoặc Quên mật khẩu</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_4">
+               <spacer name="horizontalSpacer_2">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
                 </property>
@@ -331,6 +353,44 @@
              </layout>
             </widget>
            </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QPushButton" name="btn_login_enter">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Đăng nhập</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QPushButton" name="btn_login_reges">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Bấm vào đây để đăng ký</string>
+             </property>
+            </widget>
+           </item>
           </layout>
          </widget>
         </item>
@@ -340,6 +400,46 @@
            <property name="topMargin">
             <number>0</number>
            </property>
+           <item>
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Hoặc có thể đăng nhập bằng:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_4" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QPushButton" name="btn_login_google">
+                <property name="text">
+                 <string>Google</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_login_facbook">
+                <property name="text">
+                 <string>Facebook</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
            <item>
             <spacer name="verticalSpacer">
              <property name="orientation">
@@ -378,14 +478,17 @@
         <item>
          <widget class="QWidget" name="frm_regis_top_5" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_11">
+           <property name="spacing">
+            <number>7</number>
+           </property>
            <property name="leftMargin">
-            <number>0</number>
+            <number>10</number>
            </property>
            <property name="topMargin">
             <number>0</number>
            </property>
            <property name="rightMargin">
-            <number>0</number>
+            <number>10</number>
            </property>
            <property name="bottomMargin">
             <number>0</number>
@@ -410,80 +513,14 @@
               </property>
               <item>
                <widget class="QLabel" name="lb_regis_top">
+                <property name="font">
+                 <font>
+                  <pointsize>18</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
                 <property name="text">
-                 <string>Register</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </item>
-           <item alignment="Qt::AlignLeft">
-            <widget class="QWidget" name="frm_regis_account" native="true">
-             <layout class="QHBoxLayout" name="horizontalLayout_5">
-              <property name="leftMargin">
-               <number>30</number>
-              </property>
-              <property name="rightMargin">
-               <number>15</number>
-              </property>
-              <item>
-               <widget class="QLabel" name="lb_regis_account">
-                <property name="text">
-                 <string>Tài khoản:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="le_regis_account">
-                <property name="minimumSize">
-                 <size>
-                  <width>200</width>
-                  <height>0</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="btn_regis_account">
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </item>
-           <item alignment="Qt::AlignLeft">
-            <widget class="QWidget" name="frm_regis_password" native="true">
-             <layout class="QHBoxLayout" name="horizontalLayout_6">
-              <property name="leftMargin">
-               <number>30</number>
-              </property>
-              <property name="rightMargin">
-               <number>15</number>
-              </property>
-              <item>
-               <widget class="QLabel" name="lb_regis_password">
-                <property name="text">
-                 <string>Mật khẩu:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="le_regis_password">
-                <property name="minimumSize">
-                 <size>
-                  <width>200</width>
-                  <height>0</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="btn_regis_password">
-                <property name="text">
-                 <string/>
+                 <string>Đăng ký</string>
                 </property>
                </widget>
               </item>
@@ -491,47 +528,124 @@
             </widget>
            </item>
            <item>
-            <widget class="QWidget" name="frm_btn_log" native="true">
-             <layout class="QHBoxLayout" name="horizontalLayout_11">
-              <property name="leftMargin">
-               <number>30</number>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <property name="spacing">
+               <number>0</number>
               </property>
-              <property name="rightMargin">
-               <number>15</number>
-              </property>
               <item>
-               <widget class="QPushButton" name="btn_regis_enter">
-                <property name="text">
-                 <string>Đăng ký</string>
-                </property>
+               <widget class="QWidget" name="frm_regis_account_3" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <property name="leftMargin">
+                  <number>15</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>15</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="lb_regis_account_3">
+                   <property name="text">
+                    <string>Email:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QLineEdit" name="le_regis_account_3">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_regis_account_3">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="btn_regis_forget">
-                <property name="text">
-                 <string>Quên mật khẩu</string>
-                </property>
+               <widget class="QWidget" name="frm_regis_account" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <property name="leftMargin">
+                  <number>15</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>15</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="lb_regis_account">
+                   <property name="text">
+                    <string>Tài khoản:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QLineEdit" name="le_regis_account">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_regis_account">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="btn_regis_back">
-                <property name="text">
-                 <string>Quay lại đăng nhập</string>
-                </property>
+               <widget class="QWidget" name="frm_regis_password" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <property name="leftMargin">
+                  <number>15</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>15</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="lb_regis_password">
+                   <property name="text">
+                    <string>Mật khẩu:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QLineEdit" name="le_regis_password">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_regis_password">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
                </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_15">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
               </item>
              </layout>
             </widget>
@@ -542,6 +656,32 @@
         <item>
          <widget class="QWidget" name="widget_2" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QPushButton" name="btn_regis_enter">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Đăng ký</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QPushButton" name="btn_regis_back">
+             <property name="text">
+              <string>Quay lại đăng nhập</string>
+             </property>
+            </widget>
+           </item>
            <item>
             <spacer name="verticalSpacer_2">
              <property name="orientation">
@@ -557,6 +697,129 @@
            </item>
           </layout>
          </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="frm_forget">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <property name="spacing">
+         <number>7</number>
+        </property>
+        <property name="leftMargin">
+         <number>25</number>
+        </property>
+        <property name="rightMargin">
+         <number>25</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lb_forget_password">
+          <property name="font">
+           <font>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Quên mật khẩu?</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lb_forget_password_un">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Nhập địa chỉ email để lấy lại mật khẩu</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lb_forget_account">
+          <property name="text">
+           <string>Tên đăng nhập:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_forget_account"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lb_forget_email">
+          <property name="text">
+           <string>Địa chỉ email:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_forget_email"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLineEdit" name="le_forget_captcha"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="lb_forget_captcha">
+            <property name="text">
+             <string>Nhập mã capcha</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="btn_forget_enter">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Lấy lại mật khẩu</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="btn_forget_back">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Trở về</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>99</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </widget>

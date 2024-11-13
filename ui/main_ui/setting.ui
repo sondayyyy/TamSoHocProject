@@ -63,10 +63,6 @@
         <property name="text">
          <string/>
         </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>:/Purple/icon_svg/full-screen.svg</normaloff>:/Purple/icon_svg/full-screen.svg</iconset>
-        </property>
        </widget>
       </item>
       <item>
@@ -74,20 +70,12 @@
         <property name="text">
          <string/>
         </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>:/Purple/icon_svg/restart.svg</normaloff>:/Purple/icon_svg/restart.svg</iconset>
-        </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="btn_setting_popup_end">
         <property name="text">
          <string/>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>:/Purple/icon_svg/close.svg</normaloff>:/Purple/icon_svg/close.svg</iconset>
         </property>
        </widget>
       </item>
@@ -97,46 +85,24 @@
    <item>
     <widget class="QWidget" name="frm_indi" native="true">
      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>6</number>
+      </property>
       <item>
-       <widget class="QFrame" name="frm_indi_mode">
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
+       <widget class="QWidget" name="frm_indi_mode" native="true">
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <property name="leftMargin">
           <number>0</number>
          </property>
          <property name="topMargin">
-          <number>10</number>
+          <number>0</number>
          </property>
          <property name="rightMargin">
           <number>0</number>
          </property>
          <property name="bottomMargin">
-          <number>10</number>
+          <number>0</number>
          </property>
-         <item>
-          <widget class="QLabel" name="indi_mode_image">
-           <property name="maximumSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>:/Purple/icon_svg/cloudy.svg</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
          <item>
           <widget class="QLabel" name="indi_mode_text">
            <property name="text">
@@ -145,15 +111,33 @@
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="indi_mode_checkbox">
-           <property name="text">
-            <string/>
+          <widget class="QFrame" name="frm_btn_mode">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>60</width>
-             <height>60</height>
-            </size>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
            </property>
           </widget>
          </item>
@@ -173,39 +157,14 @@
           <number>0</number>
          </property>
          <property name="topMargin">
-          <number>10</number>
+          <number>0</number>
          </property>
          <property name="rightMargin">
           <number>0</number>
          </property>
          <property name="bottomMargin">
-          <number>10</number>
+          <number>0</number>
          </property>
-         <item>
-          <widget class="QLabel" name="indi_contrast_image">
-           <property name="minimumSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>:/Purple/icon_svg/sun.svg</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
          <item>
           <widget class="QLabel" name="indi_contrast_text">
            <property name="text">
@@ -214,15 +173,33 @@
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="indi_contrast_checkbox">
-           <property name="text">
-            <string/>
+          <widget class="QFrame" name="frm_btn_contrast">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
            </property>
-           <property name="iconSize">
-            <size>
-             <width>60</width>
-             <height>60</height>
-            </size>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
            </property>
           </widget>
          </item>
@@ -276,9 +253,6 @@
               <property name="text">
                <string/>
               </property>
-              <property name="pixmap">
-               <pixmap>:/Purple/icon_svg/color-picker.svg</pixmap>
-              </property>
               <property name="scaledContents">
                <bool>true</bool>
               </property>
@@ -302,14 +276,17 @@
               <string/>
              </property>
              <property name="icon">
-              <iconset>
-               <normaloff>:/White/icon_svg/white/rows (4).svg</normaloff>:/White/icon_svg/white/rows (4).svg</iconset>
+              <iconset resource="../../resource_rc.qrc">
+               <normaloff>:/color/scr/icons/color_green.svg</normaloff>:/color/scr/icons/color_green.svg</iconset>
              </property>
              <property name="iconSize">
               <size>
                <width>20</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
              </property>
             </widget>
            </item>
@@ -319,8 +296,8 @@
               <string/>
              </property>
              <property name="icon">
-              <iconset>
-               <normaloff>:/White/icon_svg/white/rows (3).svg</normaloff>:/White/icon_svg/white/rows (3).svg</iconset>
+              <iconset resource="../../resource_rc.qrc">
+               <normaloff>:/color/scr/icons/color_purple.svg</normaloff>:/color/scr/icons/color_purple.svg</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -336,8 +313,8 @@
               <string/>
              </property>
              <property name="icon">
-              <iconset>
-               <normaloff>:/White/icon_svg/white/rows (2).svg</normaloff>:/White/icon_svg/white/rows (2).svg</iconset>
+              <iconset resource="../../resource_rc.qrc">
+               <normaloff>:/color/scr/icons/color_blue.svg</normaloff>:/color/scr/icons/color_blue.svg</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -353,8 +330,8 @@
               <string/>
              </property>
              <property name="icon">
-              <iconset>
-               <normaloff>:/White/icon_svg/white/rows (5).svg</normaloff>:/White/icon_svg/white/rows (5).svg</iconset>
+              <iconset resource="../../resource_rc.qrc">
+               <normaloff>:/color/scr/icons/color_whiteblack.svg</normaloff>:/color/scr/icons/color_whiteblack.svg</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -388,8 +365,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../../scr/resources.qrc"/>
-  <include location="../scr/resources.qrc"/>
+  <include location="../../resource_rc.qrc"/>
  </resources>
  <connections/>
 </ui>

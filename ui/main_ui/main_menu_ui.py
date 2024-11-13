@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_menukGVtyd.ui'
+## Form generated from reading UI file 'main_menutGufFW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(785, 671)
+        MainWindow.resize(785, 672)
         icon = QIcon()
         icon.addFile(u":/newPrefix/icon_svg/calendar-zoom.svg", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -120,19 +120,29 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7 = QHBoxLayout(self.left_indi_user)
         self.horizontalLayout_7.setSpacing(10)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.horizontalLayout_7.setContentsMargins(3, 10, 3, 3)
-        self.left_indi_user_image = QPushButton(self.left_indi_user)
+        self.horizontalLayout_7.setContentsMargins(3, 0, 3, 0)
+        self.widget = QWidget(self.left_indi_user)
+        self.widget.setObjectName(u"widget")
+        self.horizontalLayout_10 = QHBoxLayout(self.widget)
+        self.horizontalLayout_10.setSpacing(0)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.left_indi_user_image = QPushButton(self.widget)
         self.left_indi_user_image.setObjectName(u"left_indi_user_image")
-        self.left_indi_user_image.setMinimumSize(QSize(30, 30))
-        self.left_indi_user_image.setMaximumSize(QSize(30, 30))
+        self.left_indi_user_image.setMinimumSize(QSize(40, 40))
+        self.left_indi_user_image.setMaximumSize(QSize(40, 40))
         self.left_indi_user_image.setStyleSheet(u"QWidget {\n"
 "    border: 2px solid purple; /* \u0110\u1ed9 d\u00e0y vi\u1ec1n l\u00e0 2px, m\u00e0u \u0111en */\n"
 "    border-radius: 15px;      /* G\u00f3c vi\u1ec1n bo tr\u00f2n (t\u00f9y ch\u1ecdn) */\n"
 "}\n"
 "\n"
 "")
+        self.left_indi_user_image.setIconSize(QSize(35, 35))
 
-        self.horizontalLayout_7.addWidget(self.left_indi_user_image)
+        self.horizontalLayout_10.addWidget(self.left_indi_user_image)
+
+
+        self.horizontalLayout_7.addWidget(self.widget)
 
         self.frm_left_indi_user = QWidget(self.left_indi_user)
         self.frm_left_indi_user.setObjectName(u"frm_left_indi_user")

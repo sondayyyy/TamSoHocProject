@@ -1,10 +1,15 @@
 import sys
 from PySide6.QtWidgets import QLineEdit, QWidget, QApplication, QMainWindow, QGraphicsOpacityEffect
-from PySide6.QtGui import QIntValidator, QRegularExpressionValidator
+from PySide6.QtGui import QIntValidator, QRegularExpressionValidator, QPixmap, QImage, QIcon
 from PySide6.QtCore import QRegularExpression, QObject, Qt
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from ..TamSoHocMain import TamSoHocApp
+
+import requests
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.oauth2.credentials import credentials
+from google.auth.transport.requests import Request
 
 
 class MainWindowUiCpn(QObject):
@@ -64,12 +69,14 @@ class MainWindowUiCpn(QObject):
         self.main.ui.btn_main_indi_setting.clicked.connect(self.main.show_setting_popup)
 
 
-        self.main.ui.btn_left_indi_sign_out.clicked.connect(self.main.back_to_login)
+        self.main.ui.btn_left_indi_sign_out.clicked.connect(self.main.show_logout_accept_ui)
 
         self.main.ui.btn_minimize_obj.clicked.connect(self.main.minimize_ui)
         self.main.ui.btn_resize_obj.clicked.connect(self.main.resize_ui)
         self.main.ui.btn_end_obj.clicked.connect(self.main.end_ui)
 
+        # self.main.ui.btn_left_indi_user.setText(self.main.login_with_google(self.credentials.token("name")))
+        # self.main.ui.left_indi_user_id.setText("sơn")
 
     def show_main_menu(self):
         self.main.ui.frm_main.setCurrentWidget(self.main.ui.frm_main_menu)
@@ -90,7 +97,7 @@ class MainWindowUiCpn(QObject):
         else:
             self.main.ui.frm_left_indi.show()
             print(85, "show_indi")
-
+    
 
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
@@ -105,4 +112,8 @@ class MainWindowUiCpn(QObject):
 
     def mouseReleaseEvent(self, event):
         self.start_drag_pos = None
+
+
+
+
 

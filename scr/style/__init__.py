@@ -1,0 +1,1 @@
+from . globalStyle import Palette, palette

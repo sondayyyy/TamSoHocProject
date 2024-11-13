@@ -25,4 +25,4 @@ dist/
 obfdist/
 testfolder/
 *.spec
-
+*et.json

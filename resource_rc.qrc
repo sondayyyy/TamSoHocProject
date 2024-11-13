@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="color">
+    <file>images/color_blue.svg</file>
+    <file>images/color_green.svg</file>
+    <file>images/color_purple.svg</file>
+    <file>images/color_whiteblack.svg</file>
+  </qresource>
+</RCC>
