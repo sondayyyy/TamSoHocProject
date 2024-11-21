@@ -1,7 +1,7 @@
 import sys, os
 from PySide6.QtWidgets import QApplication, QMainWindow, QDialog, QCheckBox, QGraphicsDropShadowEffect, QWidget
-from PySide6.QtCore import Qt, QProcess
-from PySide6.QtGui import QPixmap, QImage, QIcon, QColor
+from PySide6.QtCore import Qt, QProcess, QRect
+from PySide6.QtGui import QPixmap, QImage, QIcon, QColor, QMouseEvent
 
 import threading
 from threading import Thread
@@ -11,7 +11,6 @@ from components import SettingPopupCpn, LoginWindowUiCpn, MainWindowUiCpn
 from themes import DarkTheme, LightTheme
 from utils import ThemeManager
 from view import MainWindowUiView, SettingPopupView
-from scr import ContainedButton, OutlinedButton, TextButton, SoftButton, CheckBoxCustom, SwitchButton, Palette
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.oauth2.credentials import Credentials
 from dotenv import load_dotenv
@@ -25,13 +24,13 @@ class TamSoHocApp(QMainWindow):
         self.ui = Ui_MainWindow()  # Khởi tạo giao diện chính
         self.ui_login_window = Ui_LoginMainWindow() # Khởi tạo giao diện login
         self.ui_login_window.setupUi(self)  # Thiết lập giao diện login
-        self.setWindowFlags(Qt.FramelessWindowHint)
-        
+        # self.setWindowFlags(Qt.WindowType.FramelessWindowHint)  # Ẩn khung mặc định
+
+
+
         self.theme_manager = ThemeManager(LightTheme)
 
         self.login_window_cpn = LoginWindowUiCpn(self)
-        self.ui_view = MainWindowUiView(self)
-
 
 
         self.ui_login_window.btn_login_enter.clicked.connect(self.login)
@@ -55,11 +54,6 @@ class TamSoHocApp(QMainWindow):
 
         # self.logout_accept_ui.hide()
         # self.logout_accept_ui_show_hide = False
-
-        self.ui_setting_popup.indi_color_purple.setIcon(QIcon("D:\TamSoHocProject\scr\icons\color_purple.svg"))
-        self.ui_setting_popup.indi_color_blue.setIcon(QIcon("D:\TamSoHocProject\scr\icons\color_blue.svg"))
-        self.ui_setting_popup.indi_color_green.setIcon(QIcon("D:\TamSoHocProject\scr\icons\color_green.svg"))
-        self.ui_setting_popup.indi_color_black.setIcon(QIcon("D:\TamSoHocProject\scr\icons\color_whiteblack.svg"))
 
     def login(self):
         if self.account_login_success == True:
@@ -104,6 +98,7 @@ class TamSoHocApp(QMainWindow):
     def resize_ui(self):
         if self.isMaximized(): 
             self.showNormal()
+
         else:
             self.showMaximized() 
 
@@ -166,10 +161,6 @@ class TamSoHocApp(QMainWindow):
         widget.setGraphicsEffect(shadow_effect)        
 
 
-
-
-
-        
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = TamSoHocApp()

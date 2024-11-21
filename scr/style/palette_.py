@@ -114,6 +114,15 @@ class palette():
             "contrastText": "#FFFFFF"
         }
 
+        FOUR = {
+            "indigo": INDIGO["50"],
+            "grey": GREY["50"],
+            "red": RED["50"],
+            "purple": PURPLE["50"],
+            "teal": TEAL["50"],  
+            "contrastText": "#FFFFFF"
+        }
+
         INFO = {
             "main": "#0288d1",
             "light": "#03a9f4",

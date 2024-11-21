@@ -19,7 +19,7 @@ style = '''
     }
 '''
 
-class CheckBoxCustom(QCheckBox): 
+class CustomCheckBox(QCheckBox): 
     def __init__(self, disable = False):
         super().__init__()
         # self._color = color
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     layout = QVBoxLayout(window)
 
     # Thêm nút vào layout
-    button = CheckBoxCustom()
+    button = CustomCheckBox()
     layout.addWidget(button)
 
     # Thiết lập và hiển thị cửa sổ

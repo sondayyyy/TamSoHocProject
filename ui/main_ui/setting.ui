@@ -275,16 +275,6 @@
              <property name="text">
               <string/>
              </property>
-             <property name="icon">
-              <iconset resource="../../resource_rc.qrc">
-               <normaloff>:/color/scr/icons/color_green.svg</normaloff>:/color/scr/icons/color_green.svg</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>20</width>
-               <height>20</height>
-              </size>
-             </property>
              <property name="flat">
               <bool>false</bool>
              </property>
@@ -295,15 +285,8 @@
              <property name="text">
               <string/>
              </property>
-             <property name="icon">
-              <iconset resource="../../resource_rc.qrc">
-               <normaloff>:/color/scr/icons/color_purple.svg</normaloff>:/color/scr/icons/color_purple.svg</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>20</width>
-               <height>20</height>
-              </size>
+             <property name="shortcut">
+              <string notr="true"/>
              </property>
             </widget>
            </item>
@@ -311,10 +294,6 @@
             <widget class="QPushButton" name="indi_color_blue">
              <property name="text">
               <string/>
-             </property>
-             <property name="icon">
-              <iconset resource="../../resource_rc.qrc">
-               <normaloff>:/color/scr/icons/color_blue.svg</normaloff>:/color/scr/icons/color_blue.svg</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -328,10 +307,6 @@
             <widget class="QPushButton" name="indi_color_black">
              <property name="text">
               <string/>
-             </property>
-             <property name="icon">
-              <iconset resource="../../resource_rc.qrc">
-               <normaloff>:/color/scr/icons/color_whiteblack.svg</normaloff>:/color/scr/icons/color_whiteblack.svg</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -364,8 +339,6 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="../../resource_rc.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

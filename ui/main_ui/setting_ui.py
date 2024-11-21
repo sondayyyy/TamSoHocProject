@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'settingBFosuj.ui'
+## Form generated from reading UI file 'settingCrSmJp.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -18,18 +18,12 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QLabel, QPushButton, QSizePolicy, QSpacerItem,
     QVBoxLayout, QWidget)
-import resource_rc_rc
 
 class Ui_setting_popup(object):
     def setupUi(self, setting_popup):
         if not setting_popup.objectName():
             setting_popup.setObjectName(u"setting_popup")
         setting_popup.resize(300, 408)
-        sizePolicy = QSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(setting_popup.sizePolicy().hasHeightForWidth())
-        setting_popup.setSizePolicy(sizePolicy)
         setting_popup.setMinimumSize(QSize(300, 0))
         setting_popup.setMaximumSize(QSize(300, 16777215))
         setting_popup.setStyleSheet(u"background: rgb(243, 243, 243)")
@@ -165,37 +159,26 @@ class Ui_setting_popup(object):
         self.gridLayout.setObjectName(u"gridLayout")
         self.indi_color_green = QPushButton(self.frm_indi_color)
         self.indi_color_green.setObjectName(u"indi_color_green")
-        icon = QIcon()
-        icon.addFile(u":/color/images/color_green.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.indi_color_green.setIcon(icon)
-        self.indi_color_green.setIconSize(QSize(20, 20))
         self.indi_color_green.setFlat(False)
 
         self.gridLayout.addWidget(self.indi_color_green, 1, 0, 1, 1, Qt.AlignHCenter)
 
         self.indi_color_purple = QPushButton(self.frm_indi_color)
         self.indi_color_purple.setObjectName(u"indi_color_purple")
-        icon1 = QIcon()
-        icon1.addFile(u"icons/color_purple.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.indi_color_purple.setIcon(icon1)
-        self.indi_color_purple.setIconSize(QSize(20, 20))
+#if QT_CONFIG(shortcut)
+        self.indi_color_purple.setShortcut(u"")
+#endif // QT_CONFIG(shortcut)
 
         self.gridLayout.addWidget(self.indi_color_purple, 0, 0, 1, 1, Qt.AlignHCenter)
 
         self.indi_color_blue = QPushButton(self.frm_indi_color)
         self.indi_color_blue.setObjectName(u"indi_color_blue")
-        icon2 = QIcon()
-        icon2.addFile(u":/color/images/color_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.indi_color_blue.setIcon(icon2)
         self.indi_color_blue.setIconSize(QSize(20, 20))
 
         self.gridLayout.addWidget(self.indi_color_blue, 0, 1, 1, 1, Qt.AlignHCenter)
 
         self.indi_color_black = QPushButton(self.frm_indi_color)
         self.indi_color_black.setObjectName(u"indi_color_black")
-        icon3 = QIcon()
-        icon3.addFile(u":/color/images/color_whiteblack.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.indi_color_black.setIcon(icon3)
         self.indi_color_black.setIconSize(QSize(20, 20))
 
         self.gridLayout.addWidget(self.indi_color_black, 1, 1, 1, 1, Qt.AlignHCenter)

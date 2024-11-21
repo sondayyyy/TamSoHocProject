@@ -243,52 +243,140 @@ class LightTheme:
         @staticmethod
         def teal_press():
             return LightTheme.ColorBase.press(Palette.Third.teal())
+        
+    class Four:
+        
+        @staticmethod
+        def main_hover():
+            return LightTheme.ColorBase.hover(Palette.Four.main())  # Gọi hover từ ColorBase
+
+        @staticmethod
+        def main_press():
+            return LightTheme.ColorBase.press(Palette.Four.main())  # Gọi press từ ColorBase        
+        
+
+        @staticmethod
+        def indigo():
+            return Palette.Four.indigo()
+        
+        @staticmethod
+        def indigo_hover():
+            return LightTheme.ColorBase.hover(Palette.Four.indigo())  # Gọi hover từ ColorBase
+
+        @staticmethod
+        def indigo_press():
+            return LightTheme.ColorBase.press(Palette.Four.indigo())  # Gọi press từ ColorBase
+                
+
+        @staticmethod
+        def grey():
+            return Palette.Four.grey()
+        
+        @staticmethod
+        def grey_hover():
+            return LightTheme.ColorBase.hover(Palette.Four.grey())  # Gọi hover từ ColorBase
+
+        @staticmethod
+        def grey_press():
+            return LightTheme.ColorBase.press(Palette.Four.grey())
+        
+
+        @staticmethod
+        def red():
+            return Palette.Four.red()
+        
+        @staticmethod
+        def red_hover():
+            return LightTheme.ColorBase.hover(Palette.Four.red())  # Gọi hover từ ColorBase
+
+        @staticmethod
+        def red_press():
+            return LightTheme.ColorBase.press(Palette.Four.red())
+                
+        @staticmethod
+        def purple():
+            return Palette.Four.purple()
+        
+        @staticmethod
+        def purple_hover():
+            return LightTheme.ColorBase.hover(Palette.Four.purple())  # Gọi hover từ ColorBase
+
+        @staticmethod
+        def purple_press():
+            return LightTheme.ColorBase.press(Palette.Four.purple())
+                
+        @staticmethod
+        def teal():
+            return Palette.Four.teal()
+        
+        @staticmethod
+        def teal_hover():
+            return LightTheme.ColorBase.hover(Palette.Four.teal())  # Gọi hover từ ColorBase
+
+        @staticmethod
+        def teal_press():
+            return LightTheme.ColorBase.press(Palette.Four.teal())
          
         
     class Background:
         @staticmethod
         def light():    
-            color = "#ffffff"
-            return color
+            return "#ffffff"
+        @staticmethod
+        def tittle():    
+            return "#f7f5f5"
+        @staticmethod
+        def Dark():    
+            return "#755C5C"
         
     class Text:
         @staticmethod
         def white():    
-            color = "#ffffff"
-            return color
+            return "#ffffff"
+        def Dark():    
+            return "#999"        
 
 
 
     @staticmethod
-    def get_stylesheet():
+    def stylesheet_title():
+        return f"""
+        QWidget {{
+            background-color: {LightTheme.Background.tittle()};
+        }}
+        
+        QFrame {{
+            background-color: {LightTheme.Background.tittle()};
+        }}
+        QPushButton {{
+            background-color: {LightTheme.Background.tittle()};
+        }}
+        """
+
+
+    @staticmethod
+    def stylesheet_lighter():
         return f"""
         QWidget {{
             background-color: {LightTheme.Background.light()};
-            color: {LightTheme.Primary.main()};
+            border-radius: 20px;
+            padding: 5;
         }}
-
-        QPushButton {{
-            background-color: {LightTheme.Primary.main()};
-            color: {LightTheme.Text.white()};
-            border: 1px solid {LightTheme.Primary.main()};
-            font-style: normal;
-            font-weight: {Palette.Text.fontWeightRegular()};
-            font-size: {Palette.Text.fontSize()};
-            font-family: {Palette.Text.fontFamily_sans_serif()};
-            padding: 8px 16px;
-            border-radius: 8px;
-            text-align: center;
+        
+        QFrame {{
+            background-color: {LightTheme.Background.light()};
         }}
+        """
 
-        QPushButton:hover {{
-            background-color: {LightTheme.Primary.main_hover()};
-            border-color: {LightTheme.Primary.main()};
-            color: {LightTheme.Text.white()};
+
+    @staticmethod
+    def stylesheet_darker():
+        return f"""
+        QWidget {{
+            background-color: {LightTheme.Background.Dark()};
         }}
-
-        QPushButton:pressed {{
-            background-color: {LightTheme.Primary.main_press()};
-            border-color: {LightTheme.Primary.main()};
-            color: {LightTheme.Text.white()};
+        
+        QFrame {{
+            background-color: {LightTheme.Background.Dark()};
         }}
         """

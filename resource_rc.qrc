@@ -1,8 +1,36 @@
 <RCC>
-  <qresource prefix="color">
-    <file>images/color_blue.svg</file>
-    <file>images/color_green.svg</file>
-    <file>images/color_purple.svg</file>
-    <file>images/color_whiteblack.svg</file>
+  <qresource prefix="black">
+    <file>images/png/black/home-black.png</file>
+    <file>images/png/black/book.png</file>
+    <file>images/png/black/heartOnHand.png</file>
+    <file>images/png/black/icons8-close-24.png</file>
+    <file>images/png/black/logout.png</file>
+    <file>images/png/black/menu-black.png</file>
+    <file>images/png/black/rectangle-panoramic.png</file>
+    <file>images/png/black/search.png</file>
+    <file>images/png/black/setting.png</file>
+    <file>images/png/black/user-black.png</file>
+    <file>images/png/black/window-minimize.png</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>images/png/logo/logo.png</file>
+  </qresource>
+  <qresource prefix="white">
+    <file>images/png/White/home-white.png</file>
+    <file>images/png/White/arrow-white.png</file>
+    <file>images/png/White/book-white.png</file>
+    <file>images/png/White/heartOnHand_white.png</file>
+    <file>images/png/White/logout-white.png</file>
+    <file>images/png/White/menu-white.png</file>
+    <file>images/png/White/setting_white.png</file>
+    <file>images/png/White/user-white.png</file>
+  </qresource>
+  <qresource prefix="grey">
+    <file>images/png/grey/book-grey.png</file>
+    <file>images/png/grey/home.png</file>
+    <file>images/png/grey/heartOnHand-grey.png</file>
+    <file>images/png/grey/logout-grey.png</file>
+    <file>images/png/grey/setting-grey.png</file>
+    <file>images/png/grey/user-grey.png</file>
   </qresource>
 </RCC>

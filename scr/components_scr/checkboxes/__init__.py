@@ -1,2 +1,2 @@
-from . checkbox import CheckBoxCustom
+from . checkbox import CustomCheckBox
 from . switch_button import SwitchButton

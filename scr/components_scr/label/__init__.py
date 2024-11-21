@@ -1,0 +1,1 @@
+from . label_cus import CustomLabel

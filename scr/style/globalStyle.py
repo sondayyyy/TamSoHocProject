@@ -67,6 +67,10 @@ class Palette():
         
     class Third:
         @staticmethod
+        def main():
+            return "#a8a8a8"  # Màu chính của Primary
+        
+        @staticmethod
         def indigo():
             return palette.THIRD["indigo"] # Màu sáng của Primary
         
@@ -89,6 +93,31 @@ class Palette():
         @staticmethod
         def contrastText():
             return palette.THIRD["contrastText"] # Màu sáng của Primary
+        
+    class Four:
+        @staticmethod
+        def main():
+            return "#a8a8a8"  # Màu chính của Primary
+        
+        @staticmethod
+        def indigo():
+            return palette.FOUR["indigo"] # Màu sáng của Primary
+        
+        @staticmethod
+        def grey():
+            return palette.FOUR["grey"] # Màu sáng của Primary
+        
+        @staticmethod
+        def red():
+            return palette.FOUR["red"] # Màu sáng của Primary
+        
+        @staticmethod
+        def purple():
+            return palette.FOUR["purple"] # Màu sáng của Primary
+        
+        @staticmethod
+        def teal():
+            return palette.FOUR["teal"] # Màu sáng của Primary
         
 
     class Info:
@@ -221,13 +250,13 @@ class Palette():
         @staticmethod
         def hover(primary_color):
             color = QColor(primary_color)  # Tạo đối tượng QColor từ mã màu chính
-            hover_color = color.lighter(130).name()  # Làm sáng 30% cho màu hover
+            hover_color = color.lighter(140).name()  # Làm sáng 30% cho màu hover
 
             return hover_color
 
         @staticmethod
         def press(primary_color):
             color = QColor(primary_color)  # Tạo đối tượng QColor từ mã màu chính
-            pressed_color = color.darker(120).name()  # Làm tối 20% cho màu pressed
+            pressed_color = color.darker(110).name()  # Làm tối 20% cho màu pressed
 
             return pressed_color

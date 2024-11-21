@@ -6,20 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>785</width>
-    <height>672</height>
+    <width>748</width>
+    <height>691</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>:/newPrefix/icon_svg/calendar-zoom.svg</normaloff>:/newPrefix/icon_svg/calendar-zoom.svg</iconset>
-  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="cursor">
     <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="toolTipDuration">
+    <number>0</number>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
@@ -49,17 +48,20 @@
     <item>
      <widget class="QFrame" name="frm_center">
       <property name="styleSheet">
-       <string notr="true">background: #999</string>
+       <string notr="true"/>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
       <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_5">
        <property name="spacing">
-        <number>1</number>
+        <number>5</number>
        </property>
        <property name="leftMargin">
         <number>0</number>
@@ -74,7 +76,7 @@
         <number>0</number>
        </property>
        <item>
-        <widget class="QWidget" name="frm_title" native="true">
+        <widget class="QFrame" name="frm_title">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -86,6 +88,9 @@
            <width>16777215</width>
            <height>40</height>
           </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
          </property>
          <property name="mouseTracking">
           <bool>true</bool>
@@ -101,6 +106,15 @@
          </property>
          <property name="autoFillBackground">
           <bool>false</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout">
           <property name="spacing">
@@ -132,99 +146,90 @@
            </spacer>
           </item>
           <item>
-           <widget class="QFrame" name="frame_5">
+           <widget class="QPushButton" name="btn_minimize_obj">
             <property name="minimumSize">
              <size>
-              <width>150</width>
+              <width>50</width>
               <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>150</width>
+              <width>50</width>
               <height>40</height>
              </size>
             </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+            <property name="text">
+             <string/>
             </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+            <property name="icon">
+             <iconset resource="../../resource_rc.qrc">
+              <normaloff>:/black/images/png/black/window-minimize.png</normaloff>:/black/images/png/black/window-minimize.png</iconset>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_9">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <property name="leftMargin">
-              <number>0</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>0</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QPushButton" name="btn_minimize_obj">
-               <property name="minimumSize">
-                <size>
-                 <width>50</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>50</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="btn_resize_obj">
-               <property name="minimumSize">
-                <size>
-                 <width>50</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>60</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="btn_end_obj">
-               <property name="minimumSize">
-                <size>
-                 <width>50</width>
-                 <height>40</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>40</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-            </layout>
+            <property name="iconSize">
+             <size>
+              <width>10</width>
+              <height>10</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_resize_obj">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../../resource_rc.qrc">
+              <normaloff>:/black/images/png/black/rectangle-panoramic.png</normaloff>:/black/images/png/black/rectangle-panoramic.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>14</width>
+              <height>14</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_end_obj">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../../resource_rc.qrc">
+              <normaloff>:/black/images/png/black/icons8-close-24.png</normaloff>:/black/images/png/black/icons8-close-24.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>13</width>
+              <height>13</height>
+             </size>
+            </property>
            </widget>
           </item>
          </layout>
@@ -234,19 +239,19 @@
         <widget class="QWidget" name="frm_main_" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_8">
           <property name="spacing">
-           <number>0</number>
+           <number>10</number>
           </property>
           <property name="leftMargin">
            <number>0</number>
           </property>
           <property name="topMargin">
-           <number>0</number>
+           <number>10</number>
           </property>
           <property name="rightMargin">
-           <number>0</number>
+           <number>10</number>
           </property>
           <property name="bottomMargin">
-           <number>0</number>
+           <number>10</number>
           </property>
           <item>
            <widget class="QWidget" name="frm_left_indi" native="true">
@@ -256,12 +261,15 @@
               <height>0</height>
              </size>
             </property>
+            <property name="toolTipDuration">
+             <number>0</number>
+            </property>
             <property name="styleSheet">
              <string notr="true"/>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_7">
              <property name="spacing">
-              <number>20</number>
+              <number>10</number>
              </property>
              <property name="rightMargin">
               <number>0</number>
@@ -373,8 +381,20 @@
                </layout>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft">
+             <item>
               <widget class="QPushButton" name="btn_main_indi_menu">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true"/>
                </property>
@@ -382,20 +402,35 @@
                 <string>Trang chủ</string>
                </property>
                <property name="icon">
-                <iconset>
-                 <normaloff>:/Purple/icon_svg/home.svg</normaloff>
-                 <normalon>:/White/icon_svg/white/home.svg</normalon>:/Purple/icon_svg/home.svg</iconset>
+                <iconset resource="../../resource_rc.qrc">
+                 <normaloff>:/grey/images/png/grey/home.png</normaloff>
+                 <normalon>:/white/images/png/White/home-white.png</normalon>:/grey/images/png/grey/home.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
-                 <width>35</width>
-                 <height>35</height>
+                 <width>26</width>
+                 <height>26</height>
                 </size>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft">
+             <item>
               <widget class="QPushButton" name="btn_main_indi_intro">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="contextMenuPolicy">
+                <enum>Qt::DefaultContextMenu</enum>
+               </property>
                <property name="styleSheet">
                 <string notr="true"/>
                </property>
@@ -403,51 +438,96 @@
                 <string>Giới thiệu</string>
                </property>
                <property name="icon">
-                <iconset>
-                 <normaloff>:/Purple/icon_svg/book.svg</normaloff>
-                 <normalon>:/White/icon_svg/white/book (1).svg</normalon>:/Purple/icon_svg/book.svg</iconset>
+                <iconset resource="../../resource_rc.qrc">
+                 <normaloff>:/grey/images/png/grey/heartOnHand-grey.png</normaloff>
+                 <normalon>:/white/images/png/White/heartOnHand_white.png</normalon>:/grey/images/png/grey/heartOnHand-grey.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
-                 <width>35</width>
-                 <height>35</height>
+                 <width>26</width>
+                 <height>26</height>
                 </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft">
+             <item>
               <widget class="QPushButton" name="btn_main_indi_libary">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
                <property name="text">
                 <string>Thư viện</string>
                </property>
                <property name="icon">
-                <iconset>
-                 <normaloff>:/Purple/icon_svg/bookbok (1).svg</normaloff>
-                 <normalon>:/White/icon_svg/white/book.svg</normalon>:/Purple/icon_svg/bookbok (1).svg</iconset>
+                <iconset resource="../../resource_rc.qrc">
+                 <normaloff>:/grey/images/png/grey/book-grey.png</normaloff>
+                 <normalon>:/white/images/png/White/book-white.png</normalon>:/grey/images/png/grey/book-grey.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
-                 <width>35</width>
-                 <height>35</height>
+                 <width>26</width>
+                 <height>26</height>
                 </size>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignLeft">
+             <item>
               <widget class="QPushButton" name="btn_main_indi_setting">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="sizeIncrement">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
                <property name="text">
                 <string>Cài đặt</string>
                </property>
                <property name="icon">
-                <iconset>
-                 <normaloff>:/Purple/icon_svg/setting.svg</normaloff>
-                 <normalon>:/White/icon_svg/white/adjust.svg</normalon>:/Purple/icon_svg/setting.svg</iconset>
+                <iconset resource="../../resource_rc.qrc">
+                 <normaloff>:/grey/images/png/grey/setting-grey.png</normaloff>
+                 <normalon>:/white/images/png/White/setting_white.png</normalon>:/grey/images/png/grey/setting-grey.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
-                 <width>35</width>
-                 <height>35</height>
+                 <width>26</width>
+                 <height>26</height>
                 </size>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+               <property name="default">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
                </property>
               </widget>
              </item>
@@ -481,10 +561,6 @@
                <property name="text">
                 <string>Sign out</string>
                </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>:/Purple/icon_svg/logout.svg</normaloff>:/Purple/icon_svg/logout.svg</iconset>
-               </property>
                <property name="iconSize">
                 <size>
                  <width>30</width>
@@ -502,6 +578,9 @@
           <item>
            <widget class="QWidget" name="frm_ma" native="true">
             <layout class="QVBoxLayout" name="verticalLayout_24">
+             <property name="spacing">
+              <number>2</number>
+             </property>
              <property name="leftMargin">
               <number>0</number>
              </property>
@@ -515,7 +594,7 @@
               <number>0</number>
              </property>
              <item>
-              <widget class="QFrame" name="frm_ma_top">
+              <widget class="QWidget" name="frm_ma_top" native="true">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -529,52 +608,52 @@
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background: #888</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <property name="lineWidth">
-                <number>1</number>
+                <string notr="true"/>
                </property>
                <layout class="QHBoxLayout" name="horizontalLayout_6">
                 <property name="spacing">
                  <number>0</number>
                 </property>
                 <property name="leftMargin">
-                 <number>0</number>
+                 <number>10</number>
                 </property>
                 <property name="topMargin">
                  <number>0</number>
                 </property>
                 <property name="rightMargin">
-                 <number>0</number>
+                 <number>10</number>
                 </property>
                 <property name="bottomMargin">
                  <number>0</number>
                 </property>
-                <item alignment="Qt::AlignLeft">
-                 <widget class="QWidget" name="frm_main_header_menu" native="true">
+                <item>
+                 <widget class="QPushButton" name="btn_main_header_menu">
                   <property name="minimumSize">
                    <size>
-                    <width>0</width>
-                    <height>0</height>
+                    <width>40</width>
+                    <height>40</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>16777215</width>
-                    <height>60</height>
+                    <width>40</width>
+                    <height>40</height>
                    </size>
                   </property>
                   <property name="mouseTracking">
                    <bool>true</bool>
                   </property>
+                  <property name="tabletTracking">
+                   <bool>true</bool>
+                  </property>
                   <property name="focusPolicy">
                    <enum>Qt::ClickFocus</enum>
+                  </property>
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::NoContextMenu</enum>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::RightToLeft</enum>
                   </property>
                   <property name="autoFillBackground">
                    <bool>false</bool>
@@ -582,95 +661,19 @@
                   <property name="styleSheet">
                    <string notr="true"/>
                   </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_4">
-                   <property name="spacing">
-                    <number>0</number>
-                   </property>
-                   <property name="leftMargin">
-                    <number>10</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>5</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>20</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>5</number>
-                   </property>
-                   <item>
-                    <widget class="QPushButton" name="btn_main_header_menu">
-                     <property name="minimumSize">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="mouseTracking">
-                      <bool>true</bool>
-                     </property>
-                     <property name="tabletTracking">
-                      <bool>true</bool>
-                     </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="contextMenuPolicy">
-                      <enum>Qt::NoContextMenu</enum>
-                     </property>
-                     <property name="layoutDirection">
-                      <enum>Qt::RightToLeft</enum>
-                     </property>
-                     <property name="autoFillBackground">
-                      <bool>false</bool>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="icon">
-                      <iconset>
-                       <normaloff>:/Purple/icon_svg/hamburger-menu.svg</normaloff>:/Purple/icon_svg/hamburger-menu.svg</iconset>
-                     </property>
-                     <property name="iconSize">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="lb_main_header_menu">
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>0</height>
-                      </size>
-                     </property>
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
-                     <property name="text">
-                      <string>  Menu</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../../resource_rc.qrc">
+                    <normaloff>:/black/images/png/black/menu-black.png</normaloff>:/black/images/png/black/menu-black.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>35</width>
+                    <height>35</height>
+                   </size>
+                  </property>
                  </widget>
                 </item>
                 <item>
@@ -710,11 +713,7 @@
                    <bool>false</bool>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">QWidget {
-    border: 2px solid purple; /* Độ dày viền là 2px, màu đen */
-    border-radius: 10px;      /* Góc viền bo tròn (tùy chọn) */
-}
-
+                   <string notr="true">
 </string>
                   </property>
                   <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -737,26 +736,6 @@
                     <number>0</number>
                    </property>
                    <item>
-                    <widget class="QPushButton" name="btn_main_header_search_bar">
-                     <property name="styleSheet">
-                      <string notr="true">border: none</string>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="icon">
-                      <iconset>
-                       <normaloff>:/Purple/icon_svg/glass.svg</normaloff>:/Purple/icon_svg/glass.svg</iconset>
-                     </property>
-                     <property name="iconSize">
-                      <size>
-                       <width>20</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
                     <widget class="QLineEdit" name="le_main_header_search_bar">
                      <property name="minimumSize">
                       <size>
@@ -778,6 +757,22 @@
                      </property>
                     </widget>
                    </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_main_header_search_bar">
+                     <property name="styleSheet">
+                      <string notr="true">border: none</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
                   </layout>
                  </widget>
                 </item>
@@ -795,62 +790,32 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QWidget" name="frm_main_header_user" native="true">
-                  <property name="maximumSize">
+                 <widget class="QPushButton" name="btn_main_header_user">
+                  <property name="minimumSize">
                    <size>
-                    <width>60</width>
-                    <height>60</height>
+                    <width>40</width>
+                    <height>40</height>
                    </size>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true"/>
+                  <property name="sizeIncrement">
+                   <size>
+                    <width>40</width>
+                    <height>40</height>
+                   </size>
                   </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_3">
-                   <property name="spacing">
-                    <number>0</number>
-                   </property>
-                   <property name="leftMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>10</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>0</number>
-                   </property>
-                   <item alignment="Qt::AlignRight">
-                    <widget class="QPushButton" name="btn_main_header_user">
-                     <property name="minimumSize">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="sizeIncrement">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="icon">
-                      <iconset>
-                       <normaloff>:/Purple/icon_svg/user.svg</normaloff>:/Purple/icon_svg/user.svg</iconset>
-                     </property>
-                     <property name="iconSize">
-                      <size>
-                       <width>25</width>
-                       <height>25</height>
-                      </size>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../../resource_rc.qrc">
+                    <normaloff>:/black/images/png/black/user-black.png</normaloff>:/black/images/png/black/user-black.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>25</width>
+                    <height>25</height>
+                   </size>
+                  </property>
                  </widget>
                 </item>
                </layout>
@@ -859,7 +824,7 @@
              <item>
               <widget class="QStackedWidget" name="frm_main">
                <property name="styleSheet">
-                <string notr="true">background: #888</string>
+                <string notr="true"/>
                </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -873,7 +838,7 @@
                <widget class="QWidget" name="frm_main_menu">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
                  <property name="spacing">
-                  <number>3</number>
+                  <number>15</number>
                  </property>
                  <property name="leftMargin">
                   <number>0</number>
@@ -888,44 +853,50 @@
                   <number>0</number>
                  </property>
                  <item>
-                  <widget class="QFrame" name="frm_main_center">
-                   <property name="maximumSize">
+                  <widget class="QWidget" name="frm_main_center" native="true">
+                   <property name="minimumSize">
                     <size>
-                     <width>16777215</width>
+                     <width>0</width>
                      <height>200</height>
                     </size>
                    </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>220</height>
+                    </size>
+                   </property>
                    <property name="styleSheet">
-                    <string notr="true">background: #777</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                    <string notr="true"/>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_4">
                     <property name="spacing">
-                     <number>0</number>
+                     <number>5</number>
                     </property>
                     <property name="leftMargin">
-                     <number>70</number>
+                     <number>50</number>
                     </property>
                     <property name="topMargin">
-                     <number>10</number>
+                     <number>1</number>
                     </property>
                     <property name="rightMargin">
-                     <number>70</number>
+                     <number>50</number>
                     </property>
                     <property name="bottomMargin">
-                     <number>0</number>
+                     <number>10</number>
                     </property>
                     <item>
                      <widget class="QLabel" name="lb_main_content_center_tamsohoc">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="maximumSize">
                        <size>
                         <width>1500</width>
-                        <height>30</height>
+                        <height>1500</height>
                        </size>
                       </property>
                       <property name="font">
@@ -945,11 +916,21 @@
                     <item>
                      <layout class="QGridLayout" name="glo_main_search">
                       <property name="horizontalSpacing">
-                       <number>30</number>
+                       <number>20</number>
                       </property>
                       <property name="verticalSpacing">
-                       <number>7</number>
+                       <number>1</number>
                       </property>
+                      <item row="5" column="1">
+                       <widget class="QLineEdit" name="le_main_search_month">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>25</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
                       <item row="4" column="3">
                        <widget class="QLabel" name="lb_main_search_time">
                         <property name="text">
@@ -957,18 +938,15 @@
                         </property>
                        </widget>
                       </item>
-                      <item row="7" column="0">
-                       <spacer name="verticalSpacer">
-                        <property name="orientation">
-                         <enum>Qt::Vertical</enum>
-                        </property>
-                        <property name="sizeHint" stdset="0">
+                      <item row="5" column="0">
+                       <widget class="QLineEdit" name="le_main_search_day">
+                        <property name="minimumSize">
                          <size>
-                          <width>20</width>
-                          <height>40</height>
+                          <width>0</width>
+                          <height>25</height>
                          </size>
                         </property>
-                       </spacer>
+                       </widget>
                       </item>
                       <item row="4" column="0">
                        <widget class="QLabel" name="lb_main_search_day">
@@ -977,19 +955,47 @@
                         </property>
                        </widget>
                       </item>
-                      <item row="5" column="0">
-                       <widget class="QLineEdit" name="le_main_search_day"/>
-                      </item>
-                      <item row="3" column="0" colspan="4">
-                       <widget class="QLineEdit" name="le_main_search_name"/>
-                      </item>
-                      <item row="5" column="1">
-                       <widget class="QLineEdit" name="le_main_search_month"/>
-                      </item>
                       <item row="4" column="2">
                        <widget class="QLabel" name="lb_main_search_year">
                         <property name="text">
                          <string>* Năm sinh</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QLabel" name="lb_main_search_month">
+                        <property name="text">
+                         <string>* Tháng sinh </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0" colspan="4">
+                       <widget class="QLineEdit" name="le_main_search_name">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="2">
+                       <widget class="QLineEdit" name="le_main_search_year">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>25</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="3">
+                       <widget class="QLineEdit" name="le_main_search_time">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>25</height>
+                         </size>
                         </property>
                        </widget>
                       </item>
@@ -1000,7 +1006,7 @@
                         </property>
                        </widget>
                       </item>
-                      <item row="7" column="1" colspan="2">
+                      <item row="8" column="1" colspan="2">
                        <widget class="QPushButton" name="btn_main_search_tracuu">
                         <property name="maximumSize">
                          <size>
@@ -1013,18 +1019,21 @@
                         </property>
                        </widget>
                       </item>
-                      <item row="5" column="2">
-                       <widget class="QLineEdit" name="le_main_search_year"/>
-                      </item>
-                      <item row="4" column="1">
-                       <widget class="QLabel" name="lb_main_search_month">
-                        <property name="text">
-                         <string>* Tháng sinh </string>
+                      <item row="7" column="2">
+                       <widget class="QFrame" name="frame_9">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
                         </property>
                        </widget>
-                      </item>
-                      <item row="5" column="3">
-                       <widget class="QLineEdit" name="le_main_search_time"/>
                       </item>
                      </layout>
                     </item>
@@ -1034,10 +1043,10 @@
                  <item>
                   <widget class="QTabWidget" name="frm_main_bot">
                    <property name="styleSheet">
-                    <string notr="true">background: #777</string>
+                    <string notr="true"/>
                    </property>
                    <property name="currentIndex">
-                    <number>3</number>
+                    <number>5</number>
                    </property>
                    <widget class="QWidget" name="frm_main_bot_so_do">
                     <attribute name="title">
@@ -1050,7 +1059,7 @@
                      <item>
                       <widget class="QFrame" name="frm_main_bot_content_sodo">
                        <property name="styleSheet">
-                        <string notr="true">background: #666</string>
+                        <string notr="true"/>
                        </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
@@ -1096,7 +1105,7 @@
                  <item>
                   <widget class="QFrame" name="frame">
                    <property name="styleSheet">
-                    <string notr="true">background: #999</string>
+                    <string notr="true"/>
                    </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
@@ -1130,7 +1139,7 @@
                     <item>
                      <widget class="QFrame" name="frame_2">
                       <property name="styleSheet">
-                       <string notr="true">background: #888</string>
+                       <string notr="true"/>
                       </property>
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -1173,7 +1182,7 @@
                  <item>
                   <widget class="QFrame" name="frame_3">
                    <property name="styleSheet">
-                    <string notr="true">background: #999</string>
+                    <string notr="true"/>
                    </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
@@ -1185,7 +1194,7 @@
                     <item>
                      <widget class="QFrame" name="frame_4">
                       <property name="styleSheet">
-                       <string notr="true">background: #888</string>
+                       <string notr="true"/>
                       </property>
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -1212,7 +1221,7 @@
                     </size>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">background: rgb(136, 136, 136)</string>
+                    <string notr="true"/>
                    </property>
                    <layout class="QHBoxLayout" name="horizontalLayout_2">
                     <item>
@@ -1234,7 +1243,7 @@
                     </size>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">background: #999</string>
+                    <string notr="true"/>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_25">
                     <item>
@@ -1249,7 +1258,7 @@
                        <enum>Qt::LeftToRight</enum>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">background: #888</string>
+                       <string notr="true"/>
                       </property>
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -1360,7 +1369,7 @@
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">background: #777</string>
+                          <string notr="true"/>
                          </property>
                          <property name="frameShape">
                           <enum>QFrame::StyledPanel</enum>
@@ -1395,7 +1404,7 @@
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">background: #777</string>
+                          <string notr="true"/>
                          </property>
                          <property name="frameShape">
                           <enum>QFrame::StyledPanel</enum>
@@ -1430,7 +1439,7 @@
                           </size>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">background: #777</string>
+                          <string notr="true"/>
                          </property>
                          <property name="frameShape">
                           <enum>QFrame::StyledPanel</enum>
@@ -1488,7 +1497,7 @@
                        </size>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">background: #888</string>
+                       <string notr="true"/>
                       </property>
                       <property name="text">
                        <string>Phiên bản:...........</string>
@@ -1514,6 +1523,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resource_rc.qrc"/>
+ </resources>
  <connections/>
 </ui>
