@@ -904,7 +904,7 @@
                     </widget>
                    </item>
                    <item row="8" column="3" alignment="Qt::AlignLeft">
-                    <widget class="QPushButton" name="pushButton">
+                    <widget class="QPushButton" name="btn_export">
                      <property name="text">
                       <string>Export</string>
                      </property>

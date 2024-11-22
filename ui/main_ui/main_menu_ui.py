@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_menusmGkkZ.ui'
+## Form generated from reading UI file 'main_menusEHfEE.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -389,10 +389,10 @@ class Ui_MainWindow(object):
 
         self.glo_main_search.addWidget(self.le_main_search_year, 5, 2, 1, 1)
 
-        self.pushButton = QPushButton(self.frm_main_center)
-        self.pushButton.setObjectName(u"pushButton")
+        self.btn_export = QPushButton(self.frm_main_center)
+        self.btn_export.setObjectName(u"btn_export")
 
-        self.glo_main_search.addWidget(self.pushButton, 8, 3, 1, 1, Qt.AlignLeft)
+        self.glo_main_search.addWidget(self.btn_export, 8, 3, 1, 1, Qt.AlignLeft)
 
 
         self.verticalLayout_4.addLayout(self.glo_main_search)
@@ -697,7 +697,7 @@ class Ui_MainWindow(object):
         self.lb_main_search_year.setText(QCoreApplication.translate("MainWindow", u"* N\u0103m sinh", None))
         self.btn_main_search_tracuu.setText(QCoreApplication.translate("MainWindow", u"Tra c\u1ee9u ngay", None))
         self.lb_main_search_month.setText(QCoreApplication.translate("MainWindow", u"* Th\u00e1ng sinh ", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Export", None))
+        self.btn_export.setText(QCoreApplication.translate("MainWindow", u"Export", None))
         self.frm_main_bot.setTabText(self.frm_main_bot.indexOf(self.frm_main_bot_so_do), QCoreApplication.translate("MainWindow", u"S\u01a1 \u0111\u1ed3", None))
         self.frm_main_bot.setTabText(self.frm_main_bot.indexOf(self.frm_main_bot_nguhanh), QCoreApplication.translate("MainWindow", u"Ng\u0169 h\u00e0nh", None))
         self.frm_main_bot.setTabText(self.frm_main_bot.indexOf(self.frm_main_bot_han), QCoreApplication.translate("MainWindow", u"H\u1ea1n", None))
