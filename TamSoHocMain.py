@@ -1,10 +1,7 @@
 import sys, os
 from PySide6.QtWidgets import QApplication, QMainWindow, QDialog, QCheckBox, QGraphicsDropShadowEffect, QWidget
-from PySide6.QtCore import Qt, QProcess, QRect
-from PySide6.QtGui import QPixmap, QImage, QIcon, QColor, QMouseEvent
-
-import threading
-from threading import Thread
+from PySide6.QtCore import Qt, QProcess
+from PySide6.QtGui import QPixmap, QImage, QIcon, QColor
 
 from ui import  Ui_MainWindow, Ui_setting_popup, Ui_LoginMainWindow, Ui_LogoutAccept
 from components import SettingPopupCpn, LoginWindowUiCpn, MainWindowUiCpn
@@ -13,10 +10,8 @@ from utils import ThemeManager
 from view import MainWindowUiView, SettingPopupView
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.oauth2.credentials import Credentials
-from dotenv import load_dotenv
 import requests
 
-load_dotenv()
 
 class TamSoHocApp(QMainWindow):
     def __init__(self):
@@ -25,6 +20,7 @@ class TamSoHocApp(QMainWindow):
         self.ui_login_window = Ui_LoginMainWindow() # Khởi tạo giao diện login
         self.ui_login_window.setupUi(self)  # Thiết lập giao diện login
         # self.setWindowFlags(Qt.WindowType.FramelessWindowHint)  # Ẩn khung mặc định
+        self.setWindowTitle("Tâm Số Học")
 
 
 
@@ -58,6 +54,7 @@ class TamSoHocApp(QMainWindow):
     def login(self):
         if self.account_login_success == True:
             self.ui.setupUi(self)  # Thiết lập giao diện
+            self.setWindowTitle("Tâm Số Học")
             self.ui_cpn = MainWindowUiCpn(self)
             self.ui_view = MainWindowUiView(self)
             print("đăng nhập thành công")    

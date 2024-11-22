@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_menuQjHGma.ui'
+## Form generated from reading UI file 'main_menusmGkkZ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -25,7 +25,11 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(748, 692)
+        MainWindow.resize(994, 750)
+        MainWindow.setStyleSheet(u"")
+        MainWindow.setIconSize(QSize(30, 30))
+        MainWindow.setToolButtonStyle(Qt.ToolButtonFollowStyle)
+        MainWindow.setDocumentMode(False)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setCursor(QCursor(Qt.ArrowCursor))
@@ -316,37 +320,16 @@ class Ui_MainWindow(object):
         self.glo_main_search.setObjectName(u"glo_main_search")
         self.glo_main_search.setHorizontalSpacing(20)
         self.glo_main_search.setVerticalSpacing(1)
-        self.le_main_search_month = QLineEdit(self.frm_main_center)
-        self.le_main_search_month.setObjectName(u"le_main_search_month")
-        self.le_main_search_month.setMinimumSize(QSize(0, 25))
-
-        self.glo_main_search.addWidget(self.le_main_search_month, 5, 1, 1, 1)
-
-        self.lb_main_search_time = QLabel(self.frm_main_center)
-        self.lb_main_search_time.setObjectName(u"lb_main_search_time")
-
-        self.glo_main_search.addWidget(self.lb_main_search_time, 4, 3, 1, 1)
-
         self.le_main_search_day = QLineEdit(self.frm_main_center)
         self.le_main_search_day.setObjectName(u"le_main_search_day")
         self.le_main_search_day.setMinimumSize(QSize(0, 25))
 
         self.glo_main_search.addWidget(self.le_main_search_day, 5, 0, 1, 1)
 
-        self.lb_main_search_day = QLabel(self.frm_main_center)
-        self.lb_main_search_day.setObjectName(u"lb_main_search_day")
+        self.lb_main_search_time = QLabel(self.frm_main_center)
+        self.lb_main_search_time.setObjectName(u"lb_main_search_time")
 
-        self.glo_main_search.addWidget(self.lb_main_search_day, 4, 0, 1, 1)
-
-        self.lb_main_search_year = QLabel(self.frm_main_center)
-        self.lb_main_search_year.setObjectName(u"lb_main_search_year")
-
-        self.glo_main_search.addWidget(self.lb_main_search_year, 4, 2, 1, 1)
-
-        self.lb_main_search_month = QLabel(self.frm_main_center)
-        self.lb_main_search_month.setObjectName(u"lb_main_search_month")
-
-        self.glo_main_search.addWidget(self.lb_main_search_month, 4, 1, 1, 1)
+        self.glo_main_search.addWidget(self.lb_main_search_time, 4, 3, 1, 1)
 
         self.le_main_search_name = QLineEdit(self.frm_main_center)
         self.le_main_search_name.setObjectName(u"le_main_search_name")
@@ -354,11 +337,15 @@ class Ui_MainWindow(object):
 
         self.glo_main_search.addWidget(self.le_main_search_name, 3, 0, 1, 4)
 
-        self.le_main_search_year = QLineEdit(self.frm_main_center)
-        self.le_main_search_year.setObjectName(u"le_main_search_year")
-        self.le_main_search_year.setMinimumSize(QSize(0, 25))
+        self.lb_main_search_day = QLabel(self.frm_main_center)
+        self.lb_main_search_day.setObjectName(u"lb_main_search_day")
 
-        self.glo_main_search.addWidget(self.le_main_search_year, 5, 2, 1, 1)
+        self.glo_main_search.addWidget(self.lb_main_search_day, 4, 0, 1, 1)
+
+        self.lb_main_search_name = QLabel(self.frm_main_center)
+        self.lb_main_search_name.setObjectName(u"lb_main_search_name")
+
+        self.glo_main_search.addWidget(self.lb_main_search_name, 2, 0, 1, 1)
 
         self.le_main_search_time = QLineEdit(self.frm_main_center)
         self.le_main_search_time.setObjectName(u"le_main_search_time")
@@ -366,16 +353,22 @@ class Ui_MainWindow(object):
 
         self.glo_main_search.addWidget(self.le_main_search_time, 5, 3, 1, 1)
 
-        self.lb_main_search_name = QLabel(self.frm_main_center)
-        self.lb_main_search_name.setObjectName(u"lb_main_search_name")
+        self.lb_main_search_year = QLabel(self.frm_main_center)
+        self.lb_main_search_year.setObjectName(u"lb_main_search_year")
 
-        self.glo_main_search.addWidget(self.lb_main_search_name, 2, 0, 1, 1)
+        self.glo_main_search.addWidget(self.lb_main_search_year, 4, 2, 1, 1)
 
         self.btn_main_search_tracuu = QPushButton(self.frm_main_center)
         self.btn_main_search_tracuu.setObjectName(u"btn_main_search_tracuu")
         self.btn_main_search_tracuu.setMaximumSize(QSize(16777215, 16777215))
 
         self.glo_main_search.addWidget(self.btn_main_search_tracuu, 8, 1, 1, 2)
+
+        self.le_main_search_month = QLineEdit(self.frm_main_center)
+        self.le_main_search_month.setObjectName(u"le_main_search_month")
+        self.le_main_search_month.setMinimumSize(QSize(0, 25))
+
+        self.glo_main_search.addWidget(self.le_main_search_month, 5, 1, 1, 1)
 
         self.frame_9 = QFrame(self.frm_main_center)
         self.frame_9.setObjectName(u"frame_9")
@@ -384,6 +377,22 @@ class Ui_MainWindow(object):
         self.frame_9.setFrameShadow(QFrame.Raised)
 
         self.glo_main_search.addWidget(self.frame_9, 7, 2, 1, 1)
+
+        self.lb_main_search_month = QLabel(self.frm_main_center)
+        self.lb_main_search_month.setObjectName(u"lb_main_search_month")
+
+        self.glo_main_search.addWidget(self.lb_main_search_month, 4, 1, 1, 1)
+
+        self.le_main_search_year = QLineEdit(self.frm_main_center)
+        self.le_main_search_year.setObjectName(u"le_main_search_year")
+        self.le_main_search_year.setMinimumSize(QSize(0, 25))
+
+        self.glo_main_search.addWidget(self.le_main_search_year, 5, 2, 1, 1)
+
+        self.pushButton = QPushButton(self.frm_main_center)
+        self.pushButton.setObjectName(u"pushButton")
+
+        self.glo_main_search.addWidget(self.pushButton, 8, 3, 1, 1, Qt.AlignLeft)
 
 
         self.verticalLayout_4.addLayout(self.glo_main_search)
@@ -399,14 +408,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_6 = QVBoxLayout(self.frm_main_bot_so_do)
         self.verticalLayout_6.setSpacing(0)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
-        self.frm_main_bot_content_sodo = QFrame(self.frm_main_bot_so_do)
-        self.frm_main_bot_content_sodo.setObjectName(u"frm_main_bot_content_sodo")
-        self.frm_main_bot_content_sodo.setStyleSheet(u"")
-        self.frm_main_bot_content_sodo.setFrameShape(QFrame.StyledPanel)
-        self.frm_main_bot_content_sodo.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_6.addWidget(self.frm_main_bot_content_sodo)
-
         self.frm_main_bot.addTab(self.frm_main_bot_so_do, "")
         self.frm_main_bot_nguhanh = QWidget()
         self.frm_main_bot_nguhanh.setObjectName(u"frm_main_bot_nguhanh")
@@ -692,10 +693,11 @@ class Ui_MainWindow(object):
         self.lb_main_content_center_tamsohoc.setText(QCoreApplication.translate("MainWindow", u"T\u00c2M S\u1ed0 H\u1eccC", None))
         self.lb_main_search_time.setText(QCoreApplication.translate("MainWindow", u"* Gi\u1edd sinh", None))
         self.lb_main_search_day.setText(QCoreApplication.translate("MainWindow", u"* Ng\u00e0y sinh", None))
-        self.lb_main_search_year.setText(QCoreApplication.translate("MainWindow", u"* N\u0103m sinh", None))
-        self.lb_main_search_month.setText(QCoreApplication.translate("MainWindow", u"* Th\u00e1ng sinh ", None))
         self.lb_main_search_name.setText(QCoreApplication.translate("MainWindow", u"* H\u1ecd t\u00ean:", None))
+        self.lb_main_search_year.setText(QCoreApplication.translate("MainWindow", u"* N\u0103m sinh", None))
         self.btn_main_search_tracuu.setText(QCoreApplication.translate("MainWindow", u"Tra c\u1ee9u ngay", None))
+        self.lb_main_search_month.setText(QCoreApplication.translate("MainWindow", u"* Th\u00e1ng sinh ", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Export", None))
         self.frm_main_bot.setTabText(self.frm_main_bot.indexOf(self.frm_main_bot_so_do), QCoreApplication.translate("MainWindow", u"S\u01a1 \u0111\u1ed3", None))
         self.frm_main_bot.setTabText(self.frm_main_bot.indexOf(self.frm_main_bot_nguhanh), QCoreApplication.translate("MainWindow", u"Ng\u0169 h\u00e0nh", None))
         self.frm_main_bot.setTabText(self.frm_main_bot.indexOf(self.frm_main_bot_han), QCoreApplication.translate("MainWindow", u"H\u1ea1n", None))

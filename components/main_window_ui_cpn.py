@@ -65,7 +65,7 @@ class MainWindowUiCpn(QObject):
 
         self.main.ui.btn_left_indi_sign_out.clicked.connect(self.main.show_logout_accept_ui)
 
-
+        
 
 
 
