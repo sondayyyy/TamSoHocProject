@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>994</width>
+    <width>886</width>
     <height>750</height>
    </rect>
   </property>
@@ -931,32 +931,164 @@
                   <property name="spacing">
                    <number>0</number>
                   </property>
+                  <item>
+                   <widget class="QScrollArea" name="scrollArea">
+                    <property name="widgetResizable">
+                     <bool>true</bool>
+                    </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>666</width>
+                       <height>400</height>
+                      </rect>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_12">
+                      <item>
+                       <layout class="QGridLayout" name="glo_so_do">
+                        <item row="3" column="1">
+                         <widget class="QPushButton" name="pushButton_11">
+                          <property name="text">
+                           <string>Lá hậu vận</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QPushButton" name="pushButton_4">
+                          <property name="text">
+                           <string>Lá số ức chế</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QPushButton" name="pushButton">
+                          <property name="text">
+                           <string>Lá số chủ đạo</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="QPushButton" name="pushButton_7">
+                          <property name="text">
+                           <string>Lá Thiếu niên</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QPushButton" name="pushButton_8">
+                          <property name="text">
+                           <string>Lá tuổi thơ</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QPushButton" name="pushButton_2">
+                          <property name="text">
+                           <string>Lá tiềm năng</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QPushButton" name="pushButton_5">
+                          <property name="text">
+                           <string>Lá Ngoài</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="2">
+                         <widget class="QPushButton" name="pushButton_13">
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QPushButton" name="pushButton_3">
+                          <property name="text">
+                           <string>Lá Trong</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QPushButton" name="pushButton_10">
+                          <property name="text">
+                           <string>Lá Trưởng thành</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QPushButton" name="pushButton_9">
+                          <property name="text">
+                           <string>Lá số âm</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QPushButton" name="pushButton_6">
+                          <property name="text">
+                           <string>Lá số dương</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
                  </layout>
                 </widget>
                 <widget class="QWidget" name="frm_main_bot_nguhanh">
                  <attribute name="title">
                   <string>Ngũ hành</string>
                  </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <layout class="QGridLayout" name="glo_ngu_hanh"/>
+                  </item>
+                 </layout>
                 </widget>
                 <widget class="QWidget" name="frm_main_bot_han">
                  <attribute name="title">
                   <string>Hạn</string>
                  </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_8">
+                  <item>
+                   <layout class="QGridLayout" name="glo_han"/>
+                  </item>
+                 </layout>
                 </widget>
                 <widget class="QWidget" name="frm_main_bot_tamhop">
                  <attribute name="title">
                   <string>Tam hợp và Cánh cung</string>
                  </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <item>
+                   <layout class="QGridLayout" name="glo_tam_hop"/>
+                  </item>
+                 </layout>
                 </widget>
                 <widget class="QWidget" name="frm_main_bot_dokiep">
                  <attribute name="title">
                   <string>Độ kiếp</string>
                  </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <layout class="QGridLayout" name="glo_do_kiep"/>
+                  </item>
+                 </layout>
                 </widget>
                 <widget class="QWidget" name="frm_main_bot_ten">
                  <attribute name="title">
                   <string>Tên</string>
                  </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <item>
+                   <layout class="QGridLayout" name="glo_ten"/>
+                  </item>
+                 </layout>
                 </widget>
                </widget>
               </item>

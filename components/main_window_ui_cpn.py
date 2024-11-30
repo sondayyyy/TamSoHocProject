@@ -1,15 +1,12 @@
 import sys
-from PySide6.QtWidgets import QLineEdit, QWidget, QApplication, QMainWindow, QGraphicsOpacityEffect
-from PySide6.QtGui import QIntValidator, QRegularExpressionValidator, QPixmap, QImage, QIcon
+from PySide6.QtWidgets import QVBoxLayout, QGridLayout, QLabel, QPushButton, QDialog
+from PySide6.QtGui import QIntValidator, QRegularExpressionValidator, QFont
 from PySide6.QtCore import QRegularExpression, QObject, Qt
+from utils import get_tamsohoc_result, generate_main_number_table
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from ..TamSoHocMain import TamSoHocApp
 
-import requests
-from google_auth_oauthlib.flow import InstalledAppFlow
-from google.oauth2.credentials import credentials
-from google.auth.transport.requests import Request
 
 
 class MainWindowUiCpn(QObject):
@@ -64,8 +61,11 @@ class MainWindowUiCpn(QObject):
 
 
         self.main.ui.btn_left_indi_sign_out.clicked.connect(self.main.show_logout_accept_ui)
-
         
+        self.main.ui.btn_main_search_tracuu.clicked.connect(self.handle_search)
+
+
+    # Kết nối nút với hàm
 
 
 
@@ -90,6 +90,45 @@ class MainWindowUiCpn(QObject):
             print(85, "show_indi")
     
 
+        
+    def handle_search(self): #xử lý các lệnh khác như vẽ bảng, áp số vào trong này
+        try:
+            # Lấy giá trị từ giao diện
+            name = self.main.ui.le_main_search_name.text()
+            day = int(self.main.ui.le_main_search_day.text())
+            month = int(self.main.ui.le_main_search_month.text())
+            year = int(self.main.ui.le_main_search_year.text())
+            hour = int(self.main.ui.le_main_search_time.text())
+            
 
+            # Kiểm tra dữ liệu hợp lệ
+            if not name or day <= 0 or month <= 0 or year <= 0:
+                raise ValueError("Thông tin không hợp lệ. Vui lòng nhập đủ và đúng các trường.")
+
+            # Gọi hàm xử lý kết quả
+            result = get_tamsohoc_result(name, day, month, year, hour)
+            print("kết quả handle_search 110:", self.result)
+            # for key, value in result.items():
+            #     if key == "tong_bandau":
+            #         print(key)
+
+
+            # # Chuyển đổi kết quả thành dữ liệu lưới
+            # grid_data = generate_main_number_table(self.result, str(day) + str(month) + str(year))
+            # print("Dữ liệu hiển thị lưới:", grid_data)
+
+            # # Tạo và hiển thị bảng
+            # grid_widget = self.create_grid_board_widget(board_id=1, n=3, data=grid_data)
+            # self.main.ui.glo_so_do.layout().addWidget(grid_widget)
+
+        except Exception as e:
+            print(f"Lỗi 115: {e}")
+
+    def draw_grid_3x3(self, board_id, n=3):
+        pass
+
+    def draw_number(self):
+        pass
+    
 
 

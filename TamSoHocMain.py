@@ -1,12 +1,12 @@
 import sys, os
-from PySide6.QtWidgets import QApplication, QMainWindow, QDialog, QCheckBox, QGraphicsDropShadowEffect, QWidget
+from PySide6.QtWidgets import QApplication, QMainWindow, QDialog, QGraphicsDropShadowEffect, QWidget
 from PySide6.QtCore import Qt, QProcess
 from PySide6.QtGui import QPixmap, QImage, QIcon, QColor
 
 from ui import  Ui_MainWindow, Ui_setting_popup, Ui_LoginMainWindow, Ui_LogoutAccept
 from components import SettingPopupCpn, LoginWindowUiCpn, MainWindowUiCpn
 from themes import DarkTheme, LightTheme
-from utils import ThemeManager
+from utils import get_tamsohoc_result
 from view import MainWindowUiView, SettingPopupView
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.oauth2.credentials import Credentials
@@ -24,7 +24,7 @@ class TamSoHocApp(QMainWindow):
 
 
 
-        self.theme_manager = ThemeManager(LightTheme)
+        # self.theme_manager = ThemeManager(LightTheme)
 
         self.login_window_cpn = LoginWindowUiCpn(self)
 

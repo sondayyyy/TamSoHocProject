@@ -1,19 +1,18 @@
 import unicodedata
 
-
 def get_tamsohoc_result(name, day, month, year, hour): #hàm kích hoạt kết quả
-    result = calculate_main_number(day, month, year) #kết quả
+    result = calculate_main_number(day, month, year)  # kết quả từ hàm tính toán số chủ đạo
     tong_bandau = result['tong_bandau']
     so_chu_dao = result['so_chu_dao']
     tong2_so_chu_dao = result['tong_2_so_chu_dao']
     tong2_so_chu_dao_cu = result['tong_2_so_chu_dao_cu']
 
-    dob_string = day + month + year
+    dob_string = str(day) + str(month) + str(year)  # Chuyển đổi tất cả thành chuỗi trước khi nối
 
-    y1 = int(year[0])
-    y2 = int(year[1])
-    y3 = int(year[2])
-    y4 = int(year[3])
+    y1 = int(str(year)[0])
+    y2 = int(str(year)[1])
+    y3 = int(str(year)[2])
+    y4 = int(str(year)[3])
 
     la_trong = 0
     la_ngoai = 0
@@ -32,19 +31,18 @@ def get_tamsohoc_result(name, day, month, year, hour): #hàm kích hoạt kết 
     la_ngoai_result = generate_main_number_table(la_ngoai, dob_string)
 
     la_so_an = calculate_latest_number(
-        la_trong_result['center_number'] +
-        la_ngoai_result['center_number'] if la_trong_result and la_ngoai_result else 0
+        la_trong_result['center_number'] + la_ngoai_result['center_number']
+        if la_trong_result and la_ngoai_result else 0
     )
 
     la_so_uc_che = calculate_latest_number(
-        la_ngoai_result['center_number'] -
-        la_trong_result['center_number'] if la_trong_result and la_ngoai_result else 0
+        la_ngoai_result['center_number'] - la_trong_result['center_number']
+        if la_trong_result and la_ngoai_result else 0
     )
 
     la_tuoi_tho = calculate_latest_number(y1 + y2 + y3 + y4)
     la_thanh_thieu_nien = calculate_latest_number(y1 + y2 + y3 + y4 + int(month))
-    la_truong_thanh = calculate_latest_number(
-        y1 + y2 + y3 + y4 + int(month) + int(day))
+    la_truong_thanh = calculate_latest_number(y1 + y2 + y3 + y4 + int(month) + int(day))
     la_hau_van = calculate_latest_number(
         y1 + y2 + y3 + y4 + int(month) + int(day) + int(hour or 0))
 
@@ -96,29 +94,29 @@ def get_tamsohoc_result(name, day, month, year, hour): #hàm kích hoạt kết 
     }
 
 
-def calculate_main_number(day: str, month: str, year: str): #logic tính toán số chủ đạo
+def calculate_main_number(day: str, month: str, year: str):  # logic tính toán số chủ đạo
     tong_bandau = (
         int(day)
         + int(month)
-        + int(year[0])
-        + int(year[1])
-        + int(year[2])
-        + int(year[3])
-    ) #Tổng ban đầu, ví dụ 09+12+2+0+0+2 = 25
+        + int(str(year)[0])
+        + int(str(year)[1])
+        + int(str(year)[2])
+        + int(str(year)[3])
+    )  # Tổng ban đầu, ví dụ 09+12+2+0+0+2 = 25
 
-    so_chu_dao = tong_bandau * 1 #gọi số chủ đạo = tổng ban đầu
+    so_chu_dao = tong_bandau  # Gọi số chủ đạo = tổng ban đầu
 
-    tong_2_so_chu_dao_cu = tong_bandau * 1 #gọi tổng 2 số chủ đạo cũ = tổng ban đầu
-    # khác trường hợp đặc biệt thì cộng lại
+    tong_2_so_chu_dao_cu = tong_bandau  # Gọi tổng 2 số chủ đạo cũ = tổng ban đầu
+
+    # Nếu số chủ đạo lớn hơn 9 và các chữ số không giống nhau, cộng lại
     if so_chu_dao > 9 and str(so_chu_dao)[0] != str(so_chu_dao)[1] and so_chu_dao % 10 != 0:
         so_chu_dao = sum_number_itself(so_chu_dao)
-        tong_2_so_chu_dao_cu = sum_number_itself(tong_bandau * 1)
+        tong_2_so_chu_dao_cu = sum_number_itself(tong_bandau)
 
-    if so_chu_dao > 9 and str(so_chu_dao)[0] != str(so_chu_dao)[1] and so_chu_dao % 10 != 0:
+    if so_chu_dao > 9:
         so_chu_dao = sum_number_itself(so_chu_dao)
 
-    tong_2_so_chu_dao = sum_number_itself(
-        so_chu_dao) if so_chu_dao > 9 else so_chu_dao
+    tong_2_so_chu_dao = sum_number_itself(so_chu_dao) if so_chu_dao > 9 else so_chu_dao
 
     return {
         "tong_bandau": tong_bandau,

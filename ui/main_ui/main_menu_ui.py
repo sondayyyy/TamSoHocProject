@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_menusEHfEE.ui'
+## Form generated from reading UI file 'main_menuQsFFQb.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(994, 750)
+        MainWindow.resize(886, 750)
         MainWindow.setStyleSheet(u"")
         MainWindow.setIconSize(QSize(30, 30))
         MainWindow.setToolButtonStyle(Qt.ToolButtonFollowStyle)
@@ -408,21 +408,62 @@ class Ui_MainWindow(object):
         self.verticalLayout_6 = QVBoxLayout(self.frm_main_bot_so_do)
         self.verticalLayout_6.setSpacing(0)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.glo_so_do = QGridLayout()
+        self.glo_so_do.setSpacing(15)
+        self.glo_so_do.setObjectName(u"glo_so_do")
+
+        self.verticalLayout_6.addLayout(self.glo_so_do)
+
         self.frm_main_bot.addTab(self.frm_main_bot_so_do, "")
         self.frm_main_bot_nguhanh = QWidget()
         self.frm_main_bot_nguhanh.setObjectName(u"frm_main_bot_nguhanh")
+        self.verticalLayout_5 = QVBoxLayout(self.frm_main_bot_nguhanh)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.glo_ngu_hanh = QGridLayout()
+        self.glo_ngu_hanh.setObjectName(u"glo_ngu_hanh")
+
+        self.verticalLayout_5.addLayout(self.glo_ngu_hanh)
+
         self.frm_main_bot.addTab(self.frm_main_bot_nguhanh, "")
         self.frm_main_bot_han = QWidget()
         self.frm_main_bot_han.setObjectName(u"frm_main_bot_han")
+        self.verticalLayout_8 = QVBoxLayout(self.frm_main_bot_han)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.glo_han = QGridLayout()
+        self.glo_han.setObjectName(u"glo_han")
+
+        self.verticalLayout_8.addLayout(self.glo_han)
+
         self.frm_main_bot.addTab(self.frm_main_bot_han, "")
         self.frm_main_bot_tamhop = QWidget()
         self.frm_main_bot_tamhop.setObjectName(u"frm_main_bot_tamhop")
+        self.verticalLayout_9 = QVBoxLayout(self.frm_main_bot_tamhop)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.glo_tam_hop = QGridLayout()
+        self.glo_tam_hop.setObjectName(u"glo_tam_hop")
+
+        self.verticalLayout_9.addLayout(self.glo_tam_hop)
+
         self.frm_main_bot.addTab(self.frm_main_bot_tamhop, "")
         self.frm_main_bot_dokiep = QWidget()
         self.frm_main_bot_dokiep.setObjectName(u"frm_main_bot_dokiep")
+        self.verticalLayout_10 = QVBoxLayout(self.frm_main_bot_dokiep)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.glo_do_kiep = QGridLayout()
+        self.glo_do_kiep.setObjectName(u"glo_do_kiep")
+
+        self.verticalLayout_10.addLayout(self.glo_do_kiep)
+
         self.frm_main_bot.addTab(self.frm_main_bot_dokiep, "")
         self.frm_main_bot_ten = QWidget()
         self.frm_main_bot_ten.setObjectName(u"frm_main_bot_ten")
+        self.verticalLayout_11 = QVBoxLayout(self.frm_main_bot_ten)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.glo_ten = QGridLayout()
+        self.glo_ten.setObjectName(u"glo_ten")
+
+        self.verticalLayout_11.addLayout(self.glo_ten)
+
         self.frm_main_bot.addTab(self.frm_main_bot_ten, "")
 
         self.verticalLayout_2.addWidget(self.frm_main_bot)

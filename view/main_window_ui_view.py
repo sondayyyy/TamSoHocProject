@@ -1,7 +1,5 @@
-
-import sys
 from PySide6.QtGui import QPainter, QPen, QPixmap
-from PySide6.QtWidgets import QPushButton, QFrame
+from PySide6.QtWidgets import QFrame
 from PySide6.QtCore import QRectF, QObject, Qt
 from themes import LightTheme
 from scr import SwitchButton, ContainedButton, OutlinedButton, TextButton, SoftButton, CustomWidget, CustomFrame, CustomLineEdit, SearchLineEdit

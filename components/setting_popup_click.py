@@ -34,3 +34,5 @@ class SettingPopupCpn(QObject):
     def restart_setting_popup(self):
         print("Khôi phục cài đặt mặc định")
 
+    
+    
